@@ -158,3 +158,12 @@ div.desc {
 #gmail i{
   color: orangered;
 }
+
+.container{
+  display: flex;
+}
+
+
+.gallery{
+  display: flex;
+}
