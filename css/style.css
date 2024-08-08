@@ -111,7 +111,7 @@ h3{
   background-color: powderblue;
 }
 
-#presentacion{
+.presentacion{
   margin-left: 2%;
 }
 
@@ -166,4 +166,14 @@ div.desc {
 
 .gallery{
   display: flex;
+}
+
+.imagen_header{
+  border-radius: 45%;
+  width: 20%;
+  height: 5%;
+}
+
+.video{
+  text-align: center;
 }
