@@ -112,7 +112,7 @@ h3{
 }
 
 .presentacion{
-  margin-left: 2%;
+  margin: 2%;
 }
 
 .imagen{
@@ -166,14 +166,13 @@ div.desc {
 
 .gallery{
   display: flex;
+  
 }
 
-.imagen_header{
-  border-radius: 45%;
-  width: 20%;
-  height: 5%;
+.desc{
+  background-color: beige;
 }
 
-.video{
-  text-align: center;
+.imagen_proyecto{
+  margin: 5%;
 }
