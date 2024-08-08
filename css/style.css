@@ -146,10 +146,15 @@ div.desc {
   text-align: center;
 }
 
-.linkedin{
+#linkedin i{
+  color: blue;
+}
+
+#github i{
+  color: black;
   
 }
 
-.github{
-  
+#gmail i{
+  color: orangered;
 }
