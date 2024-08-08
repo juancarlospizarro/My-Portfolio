@@ -1,0 +1,147 @@
+.header{
+    text-align: center;
+    padding: 30px;
+    background-color: beige;
+    margin: 2%;
+}
+
+.enlace_titulo:hover{
+    color: darkgray;
+}
+
+.enlace_titulo{
+    text-decoration: none;
+    color: black;
+}
+
+.barra_nav{
+    text-align: center;
+}
+
+.barra_iconos{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.iconos{
+    display: flex;
+    margin-right: 20px;
+}
+
+.enlace_icono{
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+  color: black; /* Color del texto de los enlaces */
+  padding: 10px 15px; /* Espaciado interno de los enlaces (puedes ajustar según sea necesario) */
+  display: block;
+}
+
+.enlace_icono:hover{
+    color: darkgrey;
+}
+
+label{
+  display: block;
+}
+
+.cuerpo_contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario_cuerpo{
+  padding: 10px;
+}
+
+
+ @-webkit-keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+  /* Aplicar la animación al elemento h1 */
+  .animacion_titulo {
+        -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+
+    .galeria {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+    
+    .galeria img {
+      width: 100%;
+      height: auto;
+    }
+    
+img{
+  width: 30%;
+  height: auto;
+  border-radius: 10%;
+}
+
+h3{
+  background-color: powderblue;
+}
+
+#presentacion{
+  margin-left: 2%;
+}
+
+.imagen{
+  text-align: center;
+}
+
+footer{
+  background-color: beige;
+  margin: 2%;
+}
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
