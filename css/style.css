@@ -42,20 +42,6 @@
     color: darkgrey;
 }
 
-label{
-  display: block;
-}
-
-.cuerpo_contacto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.formulario_cuerpo{
-  padding: 10px;
-}
-
 
  @-webkit-keyframes slide-in-fwd-center {
     0% {
@@ -87,19 +73,6 @@ label{
         -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-
-
-    .galeria {
-      margin: 5px;
-      border: 1px solid #ccc;
-      float: left;
-      width: 180px;
-    }
-    
-    .galeria img {
-      width: 100%;
-      height: auto;
-    }
     
 img{
   width: 30%;
@@ -115,36 +88,6 @@ h3{
   margin: 2%;
 }
 
-.imagen{
-  text-align: center;
-}
-
-footer{
-  background-color: beige;
-  margin: 2%;
-}
-
-
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 
 #linkedin i{
   color: blue;
@@ -159,20 +102,57 @@ div.desc {
   color: orangered;
 }
 
-.container{
-  display: flex;
+.imagen_proyecto{
+  margin: 5%;
 }
 
-
-.gallery{
-  display: flex;
-  
+.galeria {
+  display: flex; /* Aplica flexbox al contenedor */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si es necesario */
+  justify-content: space-around; /* Distribuye el espacio de manera uniforme entre los elementos */
+  padding: 20px; /* Espacio alrededor de la galería */
 }
 
-.desc{
+.proyecto {
+  width: 300px; /* Define un ancho fijo para cada proyecto */
+  margin: 10px; /* Espacio alrededor de cada proyecto */
+  background-color: white;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos dentro de .proyecto estén apilados verticalmente */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el zoom y la sombra */
+}
+
+.proyecto:hover {
+  transform: scale(1.05); /* Ampliar ligeramente el elemento al pasar el cursor */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añadir una sombra más pronunciada al hacer zoom */
+}
+
+.imagen_proyecto {
+  max-width: 100%;
+  height: auto; /* Asegura que la imagen se ajuste al ancho del contenedor */
+  display: block;
+  text-align: center;
+}
+
+.enlace_proyecto {
+  text-decoration: none;
+  color: black;
+}
+
+.desc {
+  padding: 10px; /* Espacio interno para la descripción */
+  text-align: center;
   background-color: beige;
 }
 
-.imagen_proyecto{
-  margin: 5%;
+@media (max-width: 768px) {
+  .galeria {
+      flex-direction: column;
+      align-items: center;
+  }
+  .proyecto {
+      width: 80%; /* Ajusta el ancho en pantallas más pequeñas */
+  }
 }
