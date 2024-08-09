@@ -16,7 +16,7 @@ Este es un proyecto en el cual diseño una simple página web que utilizo como m
 
 · *Visual Studio Code*
 
-En este [enlace](my-portfolio-juancarlospizarroalonso.vercel.app) podéis acceder a dicha página web.
+En este [enlace](https://my-portfolio-juancarlospizarroalonso.vercel.app/) podéis acceder a dicha página web.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -37,4 +37,4 @@ This is a project where I designed a simple web page that I use as my personal p
 
 · *Visual Studio Code*
 
-You can access the webpage through this [link](my-portfolio-juancarlospizarroalonso.vercel.app).
+You can access the webpage through this [link](https://my-portfolio-juancarlospizarroalonso.vercel.app/).
