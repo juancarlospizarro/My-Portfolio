@@ -6,6 +6,6 @@ var proyecto = document.querySelectorAll('.enlace_proyecto');
         }
 
         // Asigna el manejador de eventos a la imagen y al texto
-        coche.forEach(function(elemento) {
+        proyecto.forEach(function(elemento) {
             elemento.addEventListener('click', mostrarAlerta);
         });
