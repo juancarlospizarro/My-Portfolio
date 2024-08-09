@@ -88,6 +88,10 @@ h3{
   margin: 2%;
 }
 
+ul{
+  list-style-type: none;
+}
+
 
 #linkedin i{
   color: blue;
@@ -114,6 +118,7 @@ h3{
 .div_datos img, .div_web img {
   max-width: 100%; /* Ajusta las imágenes al ancho del div */
 }
+
 
 .galeria {
   display: flex; /* Aplica flexbox al contenedor */
