@@ -102,8 +102,17 @@ h3{
   color: orangered;
 }
 
-.imagen_proyecto{
-  margin: 5%;
+.container {
+  display: flex;
+  gap: 20px; /* Espacio entre los divs */
+}
+
+.div_datos, .div_web {
+  flex: 1; /* Hace que ambos divs tengan el mismo ancho */
+}
+
+.div_datos img, .div_web img {
+  max-width: 100%; /* Ajusta las imágenes al ancho del div */
 }
 
 .galeria {
@@ -134,6 +143,7 @@ h3{
   height: auto; /* Asegura que la imagen se ajuste al ancho del contenedor */
   display: block;
   text-align: center;
+  margin: 5%;
 }
 
 .enlace_proyecto {
