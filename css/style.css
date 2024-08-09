@@ -92,6 +92,14 @@ ul{
   list-style-type: none;
 }
 
+.container > div {
+  border: 2px solid #000; /* Borde sólido de 2px de color negro */
+  padding: 15px; /* Relleno interno de 15px */
+  margin-bottom: 20px; /* Espacio debajo de cada div */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  background-color: #f9f9f9; /* Fondo blanco suave */
+}
 
 #linkedin i{
   color: blue;
@@ -117,6 +125,14 @@ ul{
 
 .div_datos img, .div_web img {
   max-width: 100%; /* Ajusta las imágenes al ancho del div */
+}
+
+.imagen_datos{
+  text-align: center;
+}
+
+.imagen_web{
+  text-align: center;
 }
 
 
