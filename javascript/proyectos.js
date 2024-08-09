@@ -1,6 +1,11 @@
-document.querySelectorAll('.enlace_proyecto').forEach(function(enlace) {
-    enlace.addEventListener('click', function(event) {
-        event.preventDefault(); // Evita que el enlace redirija inmediatamente
-        alert('La página de cada proyecto aun no está implementada.');
-    });
-});
+var proyecto = document.querySelectorAll('.enlace_proyecto');
+
+        // Define la función del manejador de eventos
+        function mostrarAlerta() {
+            alert('La página de información de cada proyecto no está aún implementada.');
+        }
+
+        // Asigna el manejador de eventos a la imagen y al texto
+        coche.forEach(function(elemento) {
+            elemento.addEventListener('click', mostrarAlerta);
+        });
