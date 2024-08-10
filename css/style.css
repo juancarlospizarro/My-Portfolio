@@ -81,7 +81,8 @@ img{
 }
 
 h3{
-  background-color: powderblue;
+  background-color: coral;
+  text-align: center;
 }
 
 .presentacion{
@@ -112,6 +113,15 @@ ul{
 
 #gmail i{
   color: orangered;
+}
+
+.profile-pic {
+  width: 120px; /* Ajusta el tamaño según tus necesidades */
+  height: 120px; /* Asegúrate de que el ancho y la altura sean iguales para que sea un círculo perfecto */
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor sin distorsión */
+  border: 2px solid black; /* Opcional: añade un borde blanco alrededor */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: añade una sombra */
 }
 
 .container {
