@@ -102,8 +102,18 @@ ul{
   background-color: #f9f9f9; /* Fondo blanco suave */
 }
 
+#linkedin{
+  text-decoration: none;
+  color: black;
+}
+
 #linkedin i{
   color: blue;
+}
+
+#github{
+  text-decoration: none;
+  color: black;
 }
 
 #github i{
@@ -111,8 +121,13 @@ ul{
   
 }
 
+#gmail{
+  text-decoration: none;
+  color: black;
+}
+
 #gmail i{
-  color: orangered;
+  color: red;
 }
 
 .profile-pic {
