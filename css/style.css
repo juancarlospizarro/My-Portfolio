@@ -6,7 +6,7 @@
 }
 
 .enlace_titulo:hover{
-    color: darkgray;
+    color: coral;
 }
 
 .enlace_titulo{
@@ -16,30 +16,6 @@
 
 .barra_nav{
     text-align: center;
-}
-
-.barra_iconos{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.iconos{
-    display: flex;
-    margin-right: 20px;
-}
-
-.enlace_icono{
-    text-decoration: none; /* Eliminar subrayado de los enlaces */
-  color: black; /* Color del texto de los enlaces */
-  padding: 10px 15px; /* Espaciado interno de los enlaces (puedes ajustar según sea necesario) */
-  display: block;
-}
-
-.enlace_icono:hover{
-    color: darkgrey;
 }
 
 
@@ -107,6 +83,10 @@ ul{
   color: black;
 }
 
+#linkedin:hover{
+  color:coral;
+}
+
 #linkedin i{
   color: blue;
 }
@@ -114,6 +94,10 @@ ul{
 #github{
   text-decoration: none;
   color: black;
+}
+
+#github:hover{
+  color:coral;
 }
 
 #github i{
@@ -124,6 +108,10 @@ ul{
 #gmail{
   text-decoration: none;
   color: black;
+}
+
+#gmail:hover{
+  color:coral;
 }
 
 #gmail i{
@@ -181,7 +169,7 @@ ul{
 
 .proyecto:hover {
   transform: scale(1.05); /* Ampliar ligeramente el elemento al pasar el cursor */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añadir una sombra más pronunciada al hacer zoom */
+  box-shadow: 0 8px 16px rgba(255, 127, 80, 0.4); /* Añadir una sombra más pronunciada al hacer zoom */
 }
 
 .imagen_proyecto {
