@@ -2,7 +2,8 @@
 var proyecto = document.querySelectorAll('.enlace_proyecto');
 
 // Define la función del manejador de eventos
-function mostrarAlerta() {
+function mostrarAlerta(event) {
+    event.preventDefault()
     alert('La página de información de este proyecto no está aún implementada.');
 }
 
