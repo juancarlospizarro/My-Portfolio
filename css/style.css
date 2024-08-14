@@ -148,6 +148,27 @@ ul{
   text-align: center;
 }
 
+.buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+button:hover {
+  color: coral;
+  border-color: coral;
+}
+
+button.active {
+  background-color: white;
+  color: coral;
+  border: 2px solid coral;
+}
 
 .galeria {
   display: flex; /* Aplica flexbox al contenedor */

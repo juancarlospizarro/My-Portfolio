@@ -15,4 +15,28 @@ proyecto.forEach(function(elemento) {
     } 
 });
 
+function filterProyectos(category, button) {
+    const categorias = document.querySelectorAll('.categoria');
+    const buttons = document.querySelectorAll('.buttons button');
+
+    categorias.forEach(categoria => {
+        if (category === 'todos') {
+            categoria.style.display = 'block';
+        } else {
+            if (categoria.classList.contains(category)) {
+                categoria.style.display = 'block';
+            } else {
+                categoria.style.display = 'none';
+            }
+        }
+    });
+
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // Añadir la clase 'active' al botón seleccionado
+    button.classList.add('active');
+}
+
 

@@ -80,50 +80,65 @@
 
         
         <h3>Mis proyectos</h3>
-        
+
+        <div class="buttons">
+            <button onclick="filterProyectos('todos', this)">Todos</button>
+            <button onclick="filterProyectos('analisis', this)">Análisis de Datos</button>
+            <button onclick="filterProyectos('web', this)">Desarrollo Web</button>
+        </div>
+
 
         <div class="galeria">
-            <a class="enlace_proyecto" href="https://github.com/juancarlospizarro/Final-Euro-2024">
-                <div id="proyecto1" class="proyecto">
-                    <div class="imagen_proyecto">
-                        <img src="/images/uefa-euro-2024-logo.jpg" alt="">
-                    </div>
-                    <div class="desc">
-                        <h6>Final Euro 2024</h6>
-                        <p>Análisis de datos</p>
-                        <p><i class="fab fa-python"></i> Python (Pandas, Matplotlib)</p>
-                    </div>
-                </div>
-            </a>
-            <a class="enlace_proyecto" href="https://sports-cars-web.vercel.app/">
-                <div class="proyecto">
-                    <div class="imagen_proyecto">
-                        <img src="/images/logo.jpg" alt="">
-                    </div>
-                    <div class="desc">
-                            <h6 id="proyecto2">Sports Cars</h6>
-                            <p>Desarrollo web</p>
-                            <p><i class="fab fa-html5"></i> HTML5</p>
-                            <p><i class="fab fa-css3"></i> CSS3</p>
-                            <p><i class="fab fa-js-square"></i> JavaScript</p>
-                    </div>
-                </div>
-            </a>
-            
-
-            <a class="enlace_proyecto" href="https://github.com/juancarlospizarro/F1-Analysis">
-                <div id="proyecto3" class="proyecto">
-                    <div class="imagen_proyecto">
-                        <img src="/images/F1-logo.png" alt="">
-                    </div>
-                    <div class="desc">
-                            <h6>F1 Analysis</h6>
+            <div class="categoria analisis">
+                <a class="enlace_proyecto" href="https://github.com/juancarlospizarro/Final-Euro-2024">
+                    <div id="proyecto1" class="proyecto">
+                        <div class="imagen_proyecto">
+                            <img src="/images/uefa-euro-2024-logo.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                            <h6>Final Euro 2024</h6>
                             <p>Análisis de datos</p>
-                            <p><i class="bi bi-microsoft"></i> Microsoft Excel</p>
-                            <p><i class="bi bi-microsoft"></i> Microsoft Power BI</p>
+                            <p><i class="fab fa-python"></i> Python (Pandas, Matplotlib)</p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+
+            </div>
+            
+            <div class="categoria web">
+                <a class="enlace_proyecto" href="https://sports-cars-web.vercel.app/">
+                    <div class="proyecto">
+                        <div class="imagen_proyecto">
+                            <img src="/images/logo.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                                <h6 id="proyecto2">Sports Cars</h6>
+                                <p>Desarrollo web</p>
+                                <p><i class="fab fa-html5"></i> HTML5</p>
+                                <p><i class="fab fa-css3"></i> CSS3</p>
+                                <p><i class="fab fa-js-square"></i> JavaScript</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            
+            <div class="categoria analisis">
+                <a class="enlace_proyecto" href="https://github.com/juancarlospizarro/F1-Analysis">
+                    <div id="proyecto3" class="proyecto">
+                        <div class="imagen_proyecto">
+                            <img src="/images/F1-logo.png" alt="">
+                        </div>
+                        <div class="desc">
+                                <h6>F1 Analysis</h6>
+                                <p>Análisis de datos</p>
+                                <p><i class="bi bi-microsoft"></i> Microsoft Excel</p>
+                                <p><i class="bi bi-microsoft"></i> Microsoft Power BI</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
             
 
         </div>
