@@ -214,11 +214,8 @@ button.active {
 }
 
 @media (max-width: 768px) {
-  .galeria {
-      flex-direction: column;
-      align-items: center;
-  }
-  .proyecto {
-      width: 80%; /* Ajusta el ancho en pantallas más pequeñas */
-  }
+    .galeria {
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    }
 }
+  
