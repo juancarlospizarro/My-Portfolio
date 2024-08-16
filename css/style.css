@@ -171,17 +171,21 @@ button.active {
 }
 
 .galeria {
-  display: flex; /* Aplica flexbox al contenedor */
-  flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si es necesario */
-  justify-content: space-around; /* Distribuye el espacio de manera uniforme entre los elementos */
-  padding: 20px; /* Espacio alrededor de la galería */
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+
 }
 
 .proyecto {
   width: 300px; /* Define un ancho fijo para cada proyecto */
   margin: 10px; /* Espacio alrededor de cada proyecto */
   background-color: white;
-  border: 2px solid #ccc;
+  border: 1px solid darkgray;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column; /* Asegura que los elementos dentro de .proyecto estén apilados verticalmente */
@@ -191,6 +195,7 @@ button.active {
 .proyecto:hover {
   transform: scale(1.05); /* Ampliar ligeramente el elemento al pasar el cursor */
   box-shadow: 0 8px 16px rgba(255, 127, 80, 0.4); /* Añadir una sombra más pronunciada al hacer zoom */
+  border: 1px solid coral;
 }
 
 .imagen_proyecto {
