@@ -175,19 +175,18 @@ button.active {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 20px;
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
     box-sizing: border-box;
 
 }
 
 .proyecto {
-  width: 300px; /* Define un ancho fijo para cada proyecto */
+  width: 100%; /* Define un ancho fijo para cada proyecto */
   margin: 10px; /* Espacio alrededor de cada proyecto */
   background-color: white;
   border: 1px solid darkgray;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
   flex-direction: column; /* Asegura que los elementos dentro de .proyecto estén apilados verticalmente */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el zoom y la sombra */
 }
