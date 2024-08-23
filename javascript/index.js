@@ -39,4 +39,9 @@ function filterProyectos(category, button) {
     button.classList.add('active');
 }
 
+const button = document.getElementById('boton_oscuro');
+
+button.addEventListener('click', function() {
+    document.body.classList.toggle('oscuro');
+});
 

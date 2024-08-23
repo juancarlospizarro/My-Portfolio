@@ -61,6 +61,26 @@ img{
   border-radius: 10%;
 }
 
+#modo_oscuro{
+  text-align:center;
+}
+
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.oscuro {
+  background-color: black;
+  color: white;
+}
+
+
+body.oscuro .div_web, .div_datos {
+  color: black; /* Fija el color del texto en negro */
+}
+
 h3{
   text-align: center;
   background-color: coral;
