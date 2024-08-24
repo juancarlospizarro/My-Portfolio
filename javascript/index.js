@@ -45,3 +45,17 @@ button.addEventListener('click', function() {
     document.body.classList.toggle('oscuro');
 });
 
+document.getElementById("boton_oscuro").addEventListener("click", function() {
+    const icono = document.getElementById("icono_modo");
+
+    // Verificamos el icono actual y lo cambiamos
+    if (icono.classList.contains("bi-moon")) {
+        
+        icono.classList.remove("bi-moon");
+        icono.classList.add("bi-brightness-high");
+    } else {
+        icono.classList.remove("bi-brightness-high");
+        icono.classList.add("bi-moon");
+    }
+});
+
