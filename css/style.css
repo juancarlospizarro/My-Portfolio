@@ -81,6 +81,23 @@ body.oscuro .div_web, .div_datos {
   color: black; /* Fija el color del texto en negro */
 }
 
+/* Ancho del scrollbar */
+::-webkit-scrollbar {
+  width: 15px;  /* Ancho de la barra de desplazamiento */
+  height: 15px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+/* Estilo del "thumb" (la parte que se desplaza) */
+::-webkit-scrollbar-thumb {
+  background-color: darkgray; /* Color del "thumb" */
+  border-radius: 10px;
+}
+
+/* Estilo del "thumb" cuando está activo o se está utilizando */
+::-webkit-scrollbar-thumb:hover {
+  background-color: coral; /* Cambia el color al pasar el mouse */
+}
+
 h3{
   text-align: center;
   background-color: coral;
