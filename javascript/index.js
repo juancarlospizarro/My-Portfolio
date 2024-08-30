@@ -15,6 +15,22 @@ proyecto.forEach(function(elemento) {
     } 
 });
 
+var boton = document.querySelectorAll('.boton_funcionalidad');
+
+// Define la función del manejador de eventos
+function mostrarAlerta(event) {
+    event.preventDefault()
+    alert('Funcionalidad no implementada.');
+}
+
+// Asigna el manejador de eventos a cada elemento
+boton.forEach(function(elemento) {
+    // Verifica si el atributo 'href' está vacío
+    if (elemento.getAttribute('id') === 'cambio_idioma') {
+        elemento.addEventListener('click', mostrarAlerta);
+    } 
+});
+
 function filterProyectos(category, button) {
     const categorias = document.querySelectorAll('.categoria');
     const buttons = document.querySelectorAll('.buttons button');

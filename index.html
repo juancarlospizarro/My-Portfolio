@@ -7,13 +7,15 @@
         <link rel="icon" href="/images/portfolio.png" type="image/x-icon">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-translate-customization" content="your-customization-code">
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">          
     </head>
 
     <body>
+
 
         <header class="header">
             
@@ -31,24 +33,26 @@
 
         </header>
 
-        <div class="presentacion">
+            <div class="presentacion">
+            
 
-            <div id="modo_oscuro">
-                <button id="boton_oscuro" title="Modo oscuro/claro"><i id="icono_modo" class="bi-moon"></i></button>
-                <button id="cambio_idioma" title="Cambio de idioma"><i class="bi bi-translate"></i></button>                 
-            </div>
+                <div id="modo_oscuro">
+                    <button id="boton_oscuro" title="Modo oscuro/claro" class="boton_funcionalidad"><i id="icono_modo" class="bi-moon"></i></button>
+                    <button id="cambio_idioma" title="Cambio de idioma" class="boton_funcionalidad"><i class="bi bi-translate"></i></button>             
+                </div>
             
             <br>
+            
             
             <h3>Sobre mí</h3>
             
 
-        <p>Hola, soy una persona inquieta y con ganas de aprender acerca del desarrollo web y del analisis de datos.</p>
+            <p>Hola, soy una persona inquieta y con ganas de aprender acerca del desarrollo web y del analisis de datos.</p>
         
-        <b>Mis habilidades</b>
-        <br>
-        <br>
-        <div class="container">
+            <b>Mis habilidades</b>
+            <br>
+            <br>
+            <div class="container">
 
         
             <div class="div_datos">
@@ -78,142 +82,141 @@
             <div class="imagen_web"><img src="/images/pexels-negativespace-160107.jpg" alt=""></div>
             
             </div>
-        </div>
-        
-        
-        <br>
-        <br>
-
-        
-        <h3>Mis proyectos</h3>
-
-        <h6>Filtrar por categoría: </h6>
-        <div class="buttons">
-            <button onclick="filterProyectos('todos', this)">Todos</button>
-            <button onclick="filterProyectos('analisis', this)">Análisis de Datos</button>
-            <button onclick="filterProyectos('web', this)">Desarrollo Web</button>
-        </div>
-
-
-        <div class="galeria">
-            <div class="categoria analisis">
-                <a class="enlace_proyecto" href="https://github.com/juancarlospizarro/Final-Euro-2024">
-                    <div id="proyecto1" class="proyecto">
-                        <div class="imagen_proyecto">
-                            <img src="/images/uefa-euro-2024-logo.jpg" alt="">
-                        </div>
-                        <div class="desc">
-                            <h6>Final Euro 2024</h6>
-                            <p>Análisis de datos</p>
-                            <p><i class="fab fa-python"></i> Python (Pandas, Matplotlib)</p>
-                        </div>
-                    </div>
-                </a>
-
             </div>
-            
-            <div class="categoria web">
-                <a class="enlace_proyecto" href="https://sports-cars-web.vercel.app/">
-                    <div id="proyecto2" class="proyecto">
-                        <div class="imagen_proyecto">
-                            <img src="/images/logo.jpg" alt="">
+        
+        
+            <br>
+            <br>
+
+        
+            <h3>Mis proyectos</h3>
+
+            <h6>Filtrar por categoría: </h6>
+            <div class="buttons">
+                <button onclick="filterProyectos('todos', this)">Todos</button>
+                <button onclick="filterProyectos('analisis', this)">Análisis de Datos</button>
+                <button onclick="filterProyectos('web', this)">Desarrollo Web</button>
+            </div>
+
+
+            <div class="galeria">
+                <div class="categoria analisis">
+                    <a class="enlace_proyecto" href="https://github.com/juancarlospizarro/Final-Euro-2024">
+                        <div id="proyecto1" class="proyecto">
+                            <div class="imagen_proyecto">
+                                <img src="/images/uefa-euro-2024-logo.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <h6>Final Euro 2024</h6>
+                                <p>Análisis de datos</p>
+                                <p><i class="fab fa-python"></i> Python (Pandas, Matplotlib)</p>
+                            </div>
                         </div>
-                        <div class="desc">
+                    </a>
+
+                </div>
+            
+                <div class="categoria web">
+                    <a class="enlace_proyecto" href="https://sports-cars-web.vercel.app/">
+                        <div id="proyecto2" class="proyecto">
+                            <div class="imagen_proyecto">
+                                <img src="/images/logo.jpg" alt="">
+                            </div>
+                            <div class="desc">
                                 <h6>Sports Cars</h6>
                                 <p>Desarrollo web</p>
                                 <p><i class="fab fa-html5"></i> HTML5 |
                                 <i class="fab fa-css3"></i> CSS3 |
                                 <i class="fab fa-js-square"></i> JavaScript</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
                 
-            </div>
+                </div>
             
-            <div class="categoria analisis">
-                <a class="enlace_proyecto" href="https://github.com/juancarlospizarro/F1-Analysis">
-                    <div id="proyecto3" class="proyecto">
-                        <div class="imagen_proyecto">
-                            <img src="/images/F1-logo.png" alt="">
-                        </div>
-                        <div class="desc">
+                <div class="categoria analisis">
+                    <a class="enlace_proyecto" href="https://github.com/juancarlospizarro/F1-Analysis">
+                        <div id="proyecto3" class="proyecto">
+                            <div class="imagen_proyecto">
+                                <img src="/images/F1-logo.png" alt="">
+                            </div>
+                            <div class="desc">
                                 <h6>F1 Analysis</h6>
                                 <p>Análisis de datos</p>
                                 <p><i class="bi bi-microsoft"></i> Microsoft Excel |
                                 <i class="bi bi-microsoft"></i> Microsoft Power BI</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
 
-            <div class="categoria web">
-                <a class="enlace_proyecto" href="https://github.com/juancarlospizarro/My-Portfolio">
-                    <div id="proyecto4" class="proyecto">
-                        <div class="imagen_proyecto">
-                            <img src="/images/portfolio.png" alt="">
+                <div class="categoria web">
+                    <a class="enlace_proyecto" href="https://github.com/juancarlospizarro/My-Portfolio">
+                        <div id="proyecto4" class="proyecto">
+                            <div class="imagen_proyecto">
+                                <img src="/images/portfolio.png" alt="">
+                            </div>
+                            <div class="desc">
+                                <h6>My Portolio</h6>
+                                <p>Desarrollo web</p>
+                                <p><i class="fab fa-html5"></i> HTML5 |
+                                <i class="fab fa-css3"></i> CSS3 |
+                                <i class="fab fa-js-square"></i> JavaScript</p>
+                            </div>
                         </div>
-                        <div class="desc">
-                            <h6>My Portolio</h6>
-                            <p>Desarrollo web</p>
-                            <p><i class="fab fa-html5"></i> HTML5 |
-                            <i class="fab fa-css3"></i> CSS3 |
-                            <i class="fab fa-js-square"></i> JavaScript</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
     
-            <div class="categoria analisis">
-                <a class="enlace_proyecto" href="">
-                    <div id="proyecto5" class="proyecto">
-                        <div class="imagen_proyecto">
-                            <img src="/images/nba-logo-nba-icon-transparent-free-png.png" alt="">
-                        </div>
-                        <div class="desc">
+                <div class="categoria analisis">
+                    <a class="enlace_proyecto" href="">
+                        <div id="proyecto5" class="proyecto">
+                            <div class="imagen_proyecto">
+                                <img src="/images/nba-logo-nba-icon-transparent-free-png.png" alt="">
+                            </div>
+                            <div class="desc">
                                 <h6>NBA Players Analysis</h6>
                                 <p>Análisis de datos</p>
                                 <p>*</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
     
-            <div class="categoria ">
-                <a class="enlace_proyecto" href="">
-                    <div id="proyecto6" class="proyecto">
-                        <div class="imagen_proyecto">
-                            <img src="/images/illustration-gallery-icon_53876-27002.jpg" alt="">
-                        </div>
-                        <div class="desc">
+                <div class="categoria ">
+                    <a class="enlace_proyecto" href="">
+                        <div id="proyecto6" class="proyecto">
+                            <div class="imagen_proyecto">
+                                <img src="/images/illustration-gallery-icon_53876-27002.jpg" alt="">
+                            </div>
+                            <div class="desc">
                                 <h6>Proyecto 6</h6>
                                 <p>*</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
 
             
-        </div>
+            </div>
         
         
-        <br>
-        <br>
+            <br>
+            <br>
 
 
         
-        <h3>Acerca del sitio</h3>
+            <h3>Acerca del sitio</h3>
     
 
-        <p>He diseñado esta web para que podais conocerme mejor acerca de mis proyectos y sirva de guia para aquellos interesado en todo lo que haga relacionado con el desarrollo web y el analisis de datos.</p>
-        <p>Página web realizada con: 
-            <ul>
+            <p>He diseñado esta web para que podais conocerme mejor acerca de mis proyectos y sirva de guia para aquellos interesado en todo lo que haga relacionado con el desarrollo web y el analisis de datos.</p>
+            <p>Página web realizada con: 
+                <ul>
                 <li><i class="fab fa-html5"></i> HTML5</li>
                 <li><i class="fab fa-css3"></i> CSS3</li>
                 <li><i class="fab fa-js-square"></i> JavaScript</li></li>
             </ul>
-        </p>
-        </div>
-           
+            </p>
+            </div>  
             
         <br>
         
