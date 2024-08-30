@@ -8,6 +8,7 @@
     background-position: center; /* Centra la imagen en el header */
     margin: 2%;
     color: black;
+    border-radius: 10px;
 }
 
 .enlace_titulo:hover{
@@ -101,6 +102,7 @@ body.oscuro .div_web, .div_datos {
 h3{
   text-align: center;
   background-color: coral;
+  border-radius: 10px;
 }
 
 .presentacion{
@@ -198,18 +200,21 @@ button {
   padding: 10px 20px;
   margin-right: 10px;
   border: 2px solid black;
+  border-radius: 10px;
   background-color: white;
 }
 
 button:hover {
   color: coral;
   border-color: coral;
+  border-radius: 10px;
 }
 
 button.active {
   background-color: white;
   color: coral;
   border: 2px solid coral;
+  border-radius: 10px;
 }
 
 .galeria {
