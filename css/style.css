@@ -20,11 +20,6 @@
     color: black;
 }
 
-.barra_nav{
-    text-align: center;
-}
-
-
  @-webkit-keyframes slide-in-fwd-center {
     0% {
       -webkit-transform: translateZ(-1400px);
@@ -64,6 +59,47 @@ img{
 
 #modo_oscuro{
   text-align:center;
+}
+
+.menu_nav{
+  text-align: center;
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+}
+
+.nav-list li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-list a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.nav-list a:hover {
+  background-color: coral; /* Cambia el color de fondo al pasar el ratón */
+  border-radius: 5px;
+  color: white;
+}
+
+/* Hacer que la barra de navegación sea responsiva */
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list a {
+    padding: 10px;
+  }
 }
 
 body {
@@ -178,6 +214,7 @@ ul{
 
 .div_datos, .div_web {
   flex: 1; /* Hace que ambos divs tengan el mismo ancho */
+  background: linear-gradient(white 80%, beige);
 }
 
 .div_datos img, .div_web img {
