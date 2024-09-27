@@ -1,12 +1,17 @@
 .header{
     text-align: center;
     padding: 30px;
+    background: linear-gradient(to top left, rgba(245, 245, 220, 0.5), transparent 50%), /* Esquina superior izquierda */
+                linear-gradient(to top right, rgba(245, 245, 220, 0.5), transparent 50%), /* Esquina superior derecha */
+                linear-gradient(to bottom left, rgba(245, 245, 220, 0.5), transparent 50%), /* Esquina inferior izquierda */
+                linear-gradient(to bottom right, rgba(245, 245, 220, 0.5), transparent 50%); /* Esquina inferior derecha */
     background-color: white;
     background-size: cover; /* Hace que la imagen cubra todo el header */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen en el header */
     margin: 2%;
     color: black;
+    border: 2px solid black;
     border-radius: 10px;
 }
 
