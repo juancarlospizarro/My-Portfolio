@@ -1,14 +1,59 @@
 .header{
     text-align: center;
     padding: 30px;
-    background-color: beige;
-    background-image: url("/images/Data.jpg");
+    background-color: white;
     background-size: cover; /* Hace que la imagen cubra todo el header */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen en el header */
     margin: 2%;
     color: black;
     border-radius: 10px;
+}
+
+body.oscuro .header {
+  background-color: black; /* Cambia el color de fondo a gris oscuro */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+body.oscuro .enlace_titulo {
+  color: white; /* Cambia el color de los enlaces a blanco */
+}
+
+body.oscuro .enlace_titulo:hover {
+  color: coral; /* Cambia el color de los enlaces a blanco */
+}
+
+body.oscuro #linkedin, 
+body.oscuro #github, 
+body.oscuro #gmail {
+    color: white; /* Cambia el color de los enlaces a blanco en modo oscuro */
+}
+
+body.oscuro #linkedin:hover, 
+body.oscuro #github:hover, 
+body.oscuro #gmail:hover {
+    color: coral; /* Cambia el color de los enlaces a blanco en modo oscuro */
+}
+
+/* Cambiar el color de los iconos en modo oscuro */
+body.oscuro #linkedin i {
+    color: blue; /* Cambia el icono de LinkedIn a un color más claro en modo oscuro */
+}
+
+body.oscuro #github i {
+    color: white; /* Cambia el icono de GitHub a blanco en modo oscuro */
+}
+
+body.oscuro #gmail i {
+    color: red; /* Mantén el color rojo del icono de Gmail en modo oscuro */
+}
+
+body.oscuro .profile-pic {
+  border: 2px solid white; /* Cambia el borde a blanco en modo oscuro */
+}
+
+body.oscuro .container img {
+  border: 2px solid white; /* Cambia el borde a blanco en modo oscuro */
 }
 
 .enlace_titulo:hover{
