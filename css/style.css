@@ -490,5 +490,14 @@ body.oscuro #Acerca{
      flex-direction: column;
     }
 
+    .buttons{
+      display: flex;
+      flex-direction: column;
+      gap: 10px; /* Espacio entre los botones */
+      margin: 20px;
+      justify-content: center; /* Centra los botones horizontalmente */
+    }
+
+
 }
   
