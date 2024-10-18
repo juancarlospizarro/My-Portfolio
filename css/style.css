@@ -482,5 +482,13 @@ body.oscuro #Acerca{
       margin-right: 0;
     }
 
+    .sobre-mi-desc {
+      flex-direction: column-reverse;
+    }
+
+    .mis-proyectos-desc {
+     flex-direction: column;
+    }
+
 }
   
