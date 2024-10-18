@@ -494,7 +494,8 @@ body.oscuro #Acerca{
       display: flex;
       flex-direction: column;
       gap: 10px; /* Espacio entre los botones */
-      margin: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
       justify-content: center; /* Centra los botones horizontalmente */
     }
 
