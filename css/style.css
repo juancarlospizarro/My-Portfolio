@@ -329,7 +329,7 @@ body.oscuro .enlace_titulo {
 }
 
 body.oscuro .enlace_titulo:hover {
-  color: coral; /* Cambia el color de los enlaces a blanco */
+  color: blue; /* Cambia el color de los enlaces a blanco */
 }
 
 body.oscuro #linkedin, 
@@ -338,10 +338,16 @@ body.oscuro #gmail {
     color: white; /* Cambia el color de los enlaces a blanco en modo oscuro */
 }
 
-body.oscuro #linkedin:hover, 
-body.oscuro #github:hover, 
+body.oscuro #linkedin:hover{
+  color: blue;
+}
+
+body.oscuro #github:hover{
+  color: darkgray;
+}
+
 body.oscuro #gmail:hover {
-    color: coral; /* Cambia el color de los enlaces a blanco en modo oscuro */
+    color: red; /* Cambia el color de los enlaces a blanco en modo oscuro */
 }
 
 /* Cambiar el color de los iconos en modo oscuro */
@@ -355,10 +361,6 @@ body.oscuro #github i {
 
 body.oscuro #gmail i {
     color: red; /* Mantén el color rojo del icono de Gmail en modo oscuro */
-}
-
-body.oscuro .profile-pic {
-  border: 2px solid white; /* Cambia el borde a blanco en modo oscuro */
 }
 
 body.oscuro .container img {
@@ -416,13 +418,37 @@ body.oscuro {
   color: white;
 }
 
-body.oscuro .menu_nav h4{
+body.oscuro .menu_nav li{
   color: white;
+}
+
+body.oscuro .menu_nav li:hover{
+  color: black;
 }
 
 
 body.oscuro .div_web, .div_datos {
   color: black; /* Fija el color del texto en negro */
+}
+
+body.oscuro #Sobremi{
+  color: white;
+}
+
+body.oscuro #título-habilidades{
+  color: white;
+}
+
+body.oscuro .título-proyectos h3{
+  color: white;
+}
+
+body.oscuro .categorías{
+  color: white;
+}
+
+body.oscuro #Acerca{
+  color: white;
 }
 
 /* Barra de desplazamiento */
