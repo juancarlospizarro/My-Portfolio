@@ -16,22 +16,18 @@
 
     <body>
 
-
         <header class="header">
-            
-            
+
             <h1 id="titulo" class="animacion_titulo"><a class="enlace_titulo" href="index.html">JUAN CARLOS PIZARRO ALONSO</a></h1>
-            <img class="profile-pic" src="/images/WhatsApp Image 2024-09-29 at 08.36.49.jpeg" alt="">
-            <br>
+            
+            <h3>¡Hola! Bienvenidos a mi web personal.</h3>
             <br>
             <a class="enlace_redes" id="linkedin" target="_blank" href="https://www.linkedin.com/in/juancarlospizarroalonso/"><i class="bi bi-linkedin"></i> Linkedin </a>
             |
             <a class="enlace_redes" id="github" target="_blank" href="https://github.com/juancarlospizarro"><i class="bi bi-github"></i> GitHub </a>
             |
-            <a class="enlace_redes" id="gmail" target="_blank" href="mailto:jcpizarroalonso@gmail.com"><i class="bi bi-envelope-at-fill"></i> Email</a>
-                 
+            <a class="enlace_redes" id="gmail" target="_blank" href="mailto:jcpizarroalonso@gmail.com"><i class="bi bi-google"></i> Email</a>
             
-
         </header>
 
             <div class="presentacion">
@@ -45,69 +41,85 @@
                 <br>
                 
                 <div class="menu_nav">
+                    <nav>
                         <ul class="nav-list">
-                          <li><a href="#Sobremi"><h4>Sobre Mí</h4></a></li>
-                          <li><a href="#Proyectos"><h4>Mis Proyectos</h4></a></li>
-                          <li><a href="#Acerca"><h4>Acerca Del Sitio</h4></a></li>
-                        </ul>
-
+                            <li><a href="#Sobremi"><h4><i class="bi bi-person-circle"></i> Sobre Mí</h4></a></li>
+                            <li><a href="#Proyectos"><h4><i class="bi bi-code-square"></i> Mis Proyectos</h4></a></li>
+                            <li><a href="#Acerca"><h4><i class="bi bi-info-circle"></i> Acerca Del Sitio</h4></a></li>
+                          </ul>
+                    </nav>
+                        
                 </div>
                 
-                
             <br>
             
-            
-            <h3 id="Sobremi">Sobre mí</h3>
+            <section class="sobre-mi">
+
+                <h3 id="Sobremi"><i class="bi bi-person-circle"></i> Sobre mí</h3>
+                <div class="sobre-mi-desc">
+                    <p>Hola, soy una persona inquieta y con ganas de aprender acerca del desarrollo web y del analisis de datos.</p>
+                    <img src="/images/hombre-joven-sentado-sillon-usando-computadora-portatil-diseno-plano-ilustracion-vectorial-3d_1263815-3660.jpg" alt="Hombre con portatil">
+                </div>
+                
             
 
-            <p>Hola, soy una persona inquieta y con ganas de aprender acerca del desarrollo web y del analisis de datos.</p>
-        
-            <strong>Mis habilidades</strong>
-            <br>
+            
+            <div id="título-habilidades">
+                <strong>Mis habilidades</strong>
+            </div>
             <br>
             <div class="container">
 
         
             <div class="div_datos">
-            
-            <strong>Análisis de Datos</strong>
+            <div class="cabecera_datos">
+                <strong>Tratamiento de Datos</strong>
+            </div>
             <hr>
-                <ul>
-                    <li><i class="fab fa-python"></i> Python (Pandas, Numpy, Matplotlib, Seaborn, etc)</li>
-                    <li><i class="fas fa-database"></i> SQL</li>
-                    <li><i class="bi bi-microsoft"></i> Microsoft Power BI</li>
-                    <li><i class="bi bi-microsoft"></i> Microsoft Excel</li>
-                </ul>
-                <div class="imagen_datos"><img src="/images/pexels-goumbik-590022.jpg" alt=""></div>
-                
-                
+            <img src="/images/Python-logo-notext.svg.png" alt="Logo de python">
+            <img src="/images/Mysql_logo.png" alt="Logo MySQL">
+            <img src="/images/7af21eaf89a449831a1e12d640b54fae.png" alt="">
+            <img src="/images/Microsoft_Excel-Logo.wine.png" alt="">
             </div>
 
 
             <div class="div_web">
-            <strong>Desarrollo Web</strong>
-            <hr>
-            <ul>
-                <li><i class="fab fa-html5"></i> HTML5</li>
-                <li><i class="fab fa-css3"></i> CSS3</li>
-                <li><i class="fab fa-js-square"></i> JavaScript</li>
-            </ul>
-            <div class="imagen_web"><img src="/images/pexels-negativespace-160107.jpg" alt=""></div>
+                <div class="cabecera_web">
+                    <strong>Desarrollo Web</strong>
+                </div>
             
+            <hr>
+            <img src="/images/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML">
+            <img src="/images/css-logo (1).png" alt="Logo CSS">
+            <img src="/images/JavaScript-logo.png" alt="Logo javascript">
             </div>
             </div>
+
+            </section>
+            
         
         
             <br>
             <br>
 
-        
-            <h3 id="Proyectos">Mis proyectos</h3>
+            <section id="mis-proyectos">
 
-            <h6>Filtrar por categoría: </h6>
+            <div class="título-proyectos">
+                <h3 id="Proyectos"><i class="bi bi-code-square"></i> Mis proyectos</h3>
+            </div>
+            <br>
+            <div class="mis-proyectos-desc">
+                <img src="/images/hombre-joven-que-trabaja-computadora-portatil_81534-290.jpg" alt="Hombre con portatil">
+                <p>Hola, soy una persona inquieta y con ganas de aprender acerca del desarrollo web y del analisis de datos.</p>
+            </div>
+
+            <div class="categorías">
+                <h6 class="filtrar_categoria">Categorías </h6>
+            </div>
+            <br>
             <div class="buttons">
                 <button onclick="filterProyectos('todos', this)">Todos</button>
-                <button onclick="filterProyectos('analisis', this)">Análisis de Datos</button>
+                <button onclick="filterProyectos('analisis', this)">Tratamiento de Datos</button>
                 <button onclick="filterProyectos('web', this)">Desarrollo Web</button>
             </div>
 
@@ -119,10 +131,11 @@
                             <div class="imagen_proyecto">
                                 <img src="/images/uefa-euro-2024-logo.jpg" alt="">
                             </div>
+                            <hr>
                             <div class="desc">
                                 <h6>Final Euro 2024</h6>
                                 <p>Análisis de datos</p>
-                                <p><i class="fab fa-python"></i> Python (Pandas, Matplotlib)</p>
+                                <img src="/images/Python-logo-notext.svg.png" alt="Logo de python">
                             </div>
                         </div>
                     </a>
@@ -135,12 +148,13 @@
                             <div class="imagen_proyecto">
                                 <img src="/images/logo.jpg" alt="">
                             </div>
+                            <hr>
                             <div class="desc">
                                 <h6>Sports Cars</h6>
                                 <p>Desarrollo web</p>
-                                <p><i class="fab fa-html5"></i> HTML5 |
-                                <i class="fab fa-css3"></i> CSS3 |
-                                <i class="fab fa-js-square"></i> JavaScript</p>
+                                <img src="/images/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML">
+                                <img src="/images/css-logo (1).png" alt="Logo CSS">
+                                <img src="/images/JavaScript-logo.png" alt="Logo javascript">
                             </div>
                         </div>
                     </a>
@@ -153,11 +167,12 @@
                             <div class="imagen_proyecto">
                                 <img src="/images/F1-logo.png" alt="">
                             </div>
+                            <hr>
                             <div class="desc">
                                 <h6>F1 Analysis</h6>
                                 <p>Análisis de datos</p>
-                                <p><i class="bi bi-microsoft"></i> Microsoft Excel |
-                                <i class="bi bi-microsoft"></i> Microsoft Power BI</p>
+                                <img src="/images/7af21eaf89a449831a1e12d640b54fae.png" alt="">
+                                <img src="/images/Microsoft_Excel-Logo.wine.png" alt="">
                             </div>
                         </div>
                     </a>
@@ -169,12 +184,13 @@
                             <div class="imagen_proyecto">
                                 <img src="/images/portfolio.png" alt="">
                             </div>
+                            <hr>
                             <div class="desc">
                                 <h6>My Portolio</h6>
                                 <p>Desarrollo web</p>
-                                <p><i class="fab fa-html5"></i> HTML5 |
-                                <i class="fab fa-css3"></i> CSS3 |
-                                <i class="fab fa-js-square"></i> JavaScript</p>
+                                <img src="/images/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML">
+                                <img src="/images/css-logo (1).png" alt="Logo CSS">
+                                <img src="/images/JavaScript-logo.png" alt="Logo javascript">
                             </div>
                         </div>
                     </a>
@@ -186,10 +202,11 @@
                             <div class="imagen_proyecto">
                                 <img src="/images/nba-logo-nba-icon-transparent-free-png.png" alt="">
                             </div>
+                            <hr>
                             <div class="desc">
                                 <h6>NBA Players Analysis</h6>
                                 <p>Análisis de datos</p>
-                                <p><i class="fab fa-python"></i> Python (Pandas, Matplotlib)</p>
+                                <img src="/images/Python-logo-notext.svg.png" alt="Logo de python">
                             </div>
                         </div>
                     </a>
@@ -201,6 +218,7 @@
                             <div class="imagen_proyecto">
                                 <img src="/images/illustration-gallery-icon_53876-27002.jpg" alt="">
                             </div>
+                            <hr>
                             <div class="desc">
                                 <h6>Proyecto 6</h6>
                                 <p>*</p>
@@ -211,31 +229,30 @@
 
             
             </div>
+
+            </section>
+        
+            
         
         
             <br>
             <br>
-
-
         
-            <h3 id="Acerca">Acerca del sitio</h3>
+            <h3 id="despedida">¡Gracias por su visita!</h3>
+            <br>
+
+        <footer>
+            <section id="acerca-de">
+
+                <h3 id="Acerca"><i class="bi bi-info-circle"></i> Acerca del sitio</h3>
     
 
             <p>He diseñado esta web para que podais conocerme mejor acerca de mis proyectos y sirva de guia para aquellos interesado en todo lo que haga relacionado con el desarrollo web y el analisis de datos.</p>
-            <p>Página web realizada con: 
-                <ul>
-                <li><i class="fab fa-html5"></i> HTML5</li>
-                <li><i class="fab fa-css3"></i> CSS3</li>
-                <li><i class="fab fa-js-square"></i> JavaScript</li></li>
-            </ul>
-            </p>
+            <p>Página web realizada con <em>HTML, CSS y JavaScript</em>.</p>
+            <p>&copy; 2024 Juan Carlos Pizarro Alonso. Todos los derechos reservados.</p>
             </div>  
+            </section>
             
-        <br>
-        
-
-        <footer>
-
         </footer>
 
         

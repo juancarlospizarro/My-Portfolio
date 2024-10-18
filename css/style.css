@@ -1,18 +1,322 @@
+/* Estilos del header */
 .header{
     text-align: center;
     padding: 30px;
-    background: linear-gradient(to top left, rgba(245, 245, 220, 0.5), transparent 50%), /* Esquina superior izquierda */
-                linear-gradient(to top right, rgba(245, 245, 220, 0.5), transparent 50%), /* Esquina superior derecha */
-                linear-gradient(to bottom left, rgba(245, 245, 220, 0.5), transparent 50%), /* Esquina inferior izquierda */
-                linear-gradient(to bottom right, rgba(245, 245, 220, 0.5), transparent 50%); /* Esquina inferior derecha */
-    background-color: white;
-    background-size: cover; /* Hace que la imagen cubra todo el header */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen en el header */
-    margin: 2%;
-    color: black;
-    border: 2px solid black;
+    border: 2px solid navy;
+    padding: 20px;
+    margin: 20px;
     border-radius: 10px;
+}
+
+.enlace_titulo:hover{
+  color: blue;
+}
+
+.enlace_titulo{
+  text-decoration: none;
+  color: black;
+}
+
+#linkedin{
+  text-decoration: none;
+  color: black;
+}
+
+#linkedin:hover{
+  color:blue;
+}
+
+#linkedin i{
+  color: blue;
+}
+
+#github{
+  text-decoration: none;
+  color: black;
+}
+
+#github:hover{
+  color: darkgray;
+}
+
+#github i{
+  color: black;
+  
+}
+
+#gmail{
+  text-decoration: none;
+  color: black;
+}
+
+#gmail:hover{
+  color:red;
+}
+
+#gmail i{
+  color: red;
+}
+
+/* Estilos botones */
+.buttons {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+button:hover {
+  color: blue;
+  border-color: blue;
+  border-radius: 10px;
+}
+
+button.active {
+  background-color: white;
+  color: blue;
+  border: 2px solid navy;
+  border-radius: 10px;
+}
+
+/* Estilo menu de navegación */
+.menu_nav{
+  text-align: center;
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+  background-color: navy;
+  border: 2px solid navy;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nav-list li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.nav-list a:hover {
+  background-color: white; /* Cambia el color de fondo al pasar el ratón */
+  border-radius: 5px;
+  color: black;
+}
+
+/* Hacer que la barra de navegación sea responsiva */
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list a {
+    padding: 10px;
+  }
+}
+
+/* Sección Sobre mí */
+
+#Sobremi{
+  color: navy;
+  margin-left: 75px;
+}
+.sobre-mi-desc {
+  display: flex;
+  align-items: center; /* Alinea el contenido al inicio (izquierda) verticalmente */
+  justify-content: center; /* Alinea el contenido al inicio horizontalmente (izquierda) */
+  gap: 20px; /* Espacio entre la imagen y el párrafo */
+  margin-bottom: 20px; /* Espacio inferior después del contenido */
+}
+
+.sobre-mi img {
+  width: 200px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.sobre-mi p {
+  max-width: 600px; /* Controla el ancho máximo del párrafo */
+  text-align: justify; /* Justifica el texto para una mejor legibilidad */
+}
+
+.presentacion{
+  margin: 2%;
+}
+
+.container > div {
+  border: 2px solid navy; /* Borde sólido de 2px de color negro */
+  padding: 15px; /* Relleno interno de 15px */
+  margin-bottom: 20px; /* Espacio debajo de cada div */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  background-color: #f9f9f9; /* Fondo blanco suave */
+}
+
+.container {
+  display: flex;
+  gap: 20px; /* Espacio entre los divs */
+}
+
+#título-habilidades{
+  text-align: center;
+  color: navy;
+}
+
+.cabecera_datos{
+  color: navy;
+}
+
+.cabecera_web{
+  color: navy;
+}
+
+.div_datos, .div_web {
+  flex: 1; /* Hace que ambos divs tengan el mismo ancho */
+}
+
+.div_datos img, .div_web img {
+  max-width: 100%; /* Ajusta las imágenes al ancho del div */
+  width: 10%;
+  border-radius: 0;
+}
+
+.imagen_datos{
+  text-align: center;
+}
+
+.imagen_web{
+  text-align: center;
+}
+
+/* Sección de proyectos */
+
+.título-proyectos{
+  color: navy;
+  text-align: end;
+  margin-right: 75px;
+}
+
+.mis-proyectos-desc {
+  display: flex;
+  align-items: center; /* Alinea el contenido al inicio (izquierda) verticalmente */
+  justify-content: center; /* Alinea el contenido al inicio horizontalmente (izquierda) */
+  gap: 20px; /* Espacio entre la imagen y el párrafo */
+  margin-bottom: 20px; /* Espacio inferior después del contenido */
+}
+
+.mis-proyectos-desc img {
+  width: 200px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+.mis-proyectos-desc p {
+  max-width: 600px; /* Controla el ancho máximo del párrafo */
+  text-align: justify; /* Justifica el texto para una mejor legibilidad */
+  margin: 0; /* Elimina cualquier margen adicional que pueda desplazar el texto */
+}
+
+
+.categorías{
+  color: navy;
+  text-align: center;
+}
+
+.galeria {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.proyecto {
+  width: 100%; /* Define un ancho fijo para cada proyecto */
+  background-color: white;
+  border: 1px solid navy;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el zoom y la sombra */
+  border-radius: 10px;
+}
+
+.proyecto:hover {
+  transform: scale(1.05); /* Ampliar ligeramente el elemento al pasar el cursor */
+  box-shadow: 0 8px 16px rgba(0, 0, 128, 0.4); /* Color navy con 40% de opacidad */
+  border: 1px solid navy;
+  border-radius: 10px;
+}
+
+.imagen_proyecto {
+  max-width: 100%;
+  height: auto; /* Asegura que la imagen se ajuste al ancho del contenedor */
+  display: block;
+  text-align: center;
+  margin: 5%;
+}
+
+.enlace_proyecto {
+  text-decoration: none;
+  color: black;
+}
+
+.desc {
+  padding: 10px; /* Espacio interno para la descripción */
+  text-align: center;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.desc img{
+   max-width: 100%; /* Ajusta las imágenes al ancho del div */
+  width: 10%;
+  height: 10%;
+  border-radius: 0;
+}
+
+ #despedida{
+  text-align: center;
+ }
+
+/* Sección Acerca de */
+
+#Acerca{
+  color: navy;
+}
+
+.imagenes-acerca{
+  max-width: 100%; /* Ajusta las imágenes al ancho del div */
+  width: 30%;
+  border-radius: 0;
+}
+
+
+
+
+
+
+
+/* Modo oscuro */
+
+#modo_oscuro{
+  text-align:center;
 }
 
 body.oscuro .header {
@@ -61,14 +365,10 @@ body.oscuro .container img {
   border: 2px solid white; /* Cambia el borde a blanco en modo oscuro */
 }
 
-.enlace_titulo:hover{
-    color: coral;
-}
 
-.enlace_titulo{
-    text-decoration: none;
-    color: black;
-}
+
+
+
 
  @-webkit-keyframes slide-in-fwd-center {
     0% {
@@ -94,62 +394,15 @@ body.oscuro .container img {
       opacity: 1;
     }
   }
-
-  /* Aplicar la animación al elemento h1 */
-  .animacion_titulo {
-        -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
     
+
+
+/* body */
+
 img{
   width: 30%;
   height: auto;
   border-radius: 10%;
-}
-
-#modo_oscuro{
-  text-align:center;
-}
-
-.menu_nav{
-  text-align: center;
-  width: 100%;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-around; /* Distribuye los elementos de manera uniforme */
-}
-
-.nav-list li {
-  flex: 1;
-  text-align: center;
-}
-
-.nav-list a {
-  color: black;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-}
-
-.nav-list a:hover {
-  background-color: coral; /* Cambia el color de fondo al pasar el ratón */
-  border-radius: 5px;
-  color: white;
-}
-
-/* Hacer que la barra de navegación sea responsiva */
-@media (max-width: 600px) {
-  .nav-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-list a {
-    padding: 10px;
-  }
 }
 
 body {
@@ -172,6 +425,8 @@ body.oscuro .div_web, .div_datos {
   color: black; /* Fija el color del texto en negro */
 }
 
+/* Barra de desplazamiento */
+
 /* Ancho del scrollbar */
 ::-webkit-scrollbar {
   width: 15px;  /* Ancho de la barra de desplazamiento */
@@ -186,173 +441,7 @@ body.oscuro .div_web, .div_datos {
 
 /* Estilo del "thumb" cuando está activo o se está utilizando */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: coral; /* Cambia el color al pasar el mouse */
-}
-
-h3{
-  text-align: center;
-  background-color: coral;
-  border-radius: 10px;
-}
-
-.presentacion{
-  margin: 2%;
-}
-
-ul{
-  list-style-type: none;
-}
-
-.container > div {
-  border: 2px solid #000; /* Borde sólido de 2px de color negro */
-  padding: 15px; /* Relleno interno de 15px */
-  margin-bottom: 20px; /* Espacio debajo de cada div */
-  border-radius: 10px; /* Esquinas redondeadas */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  background-color: #f9f9f9; /* Fondo blanco suave */
-}
-
-#linkedin{
-  text-decoration: none;
-  color: black;
-}
-
-#linkedin:hover{
-  color:coral;
-}
-
-#linkedin i{
-  color: blue;
-}
-
-#github{
-  text-decoration: none;
-  color: black;
-}
-
-#github:hover{
-  color:coral;
-}
-
-#github i{
-  color: black;
-  
-}
-
-#gmail{
-  text-decoration: none;
-  color: black;
-}
-
-#gmail:hover{
-  color:coral;
-}
-
-#gmail i{
-  color: red;
-}
-
-.profile-pic {
-  width: 120px; /* Ajusta el tamaño según tus necesidades */
-  height: 120px; /* Asegúrate de que el ancho y la altura sean iguales para que sea un círculo perfecto */
-  border-radius: 50%; /* Hace que la imagen sea redonda */
-  object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor sin distorsión */
-  border: 2px solid black; /* Opcional: añade un borde blanco alrededor */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: añade una sombra */
-}
-
-.container {
-  display: flex;
-  gap: 20px; /* Espacio entre los divs */
-}
-
-.div_datos, .div_web {
-  flex: 1; /* Hace que ambos divs tengan el mismo ancho */
-  background: linear-gradient(white 80%, beige);
-}
-
-.div_datos img, .div_web img {
-  max-width: 100%; /* Ajusta las imágenes al ancho del div */
-}
-
-.imagen_datos{
-  text-align: center;
-}
-
-.imagen_web{
-  text-align: center;
-}
-
-.buttons {
-  margin-bottom: 20px;
-}
-
-button {
-  padding: 10px 20px;
-  margin-right: 10px;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: white;
-}
-
-button:hover {
-  color: coral;
-  border-color: coral;
-  border-radius: 10px;
-}
-
-button.active {
-  background-color: white;
-  color: coral;
-  border: 2px solid coral;
-  border-radius: 10px;
-}
-
-.galeria {
-  display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-
-}
-
-.proyecto {
-  width: 100%; /* Define un ancho fijo para cada proyecto */
-  background-color: white;
-  border: 1px solid darkgray;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el zoom y la sombra */
-  border-radius: 10px;
-}
-
-.proyecto:hover {
-  transform: scale(1.05); /* Ampliar ligeramente el elemento al pasar el cursor */
-  box-shadow: 0 8px 16px rgba(255, 127, 80, 0.4); /* Añadir una sombra más pronunciada al hacer zoom */
-  border: 1px solid coral;
-  border-radius: 10px;
-}
-
-.imagen_proyecto {
-  max-width: 100%;
-  height: auto; /* Asegura que la imagen se ajuste al ancho del contenedor */
-  display: block;
-  text-align: center;
-  margin: 5%;
-}
-
-.enlace_proyecto {
-  text-decoration: none;
-  color: black;
-}
-
-.desc {
-  padding: 10px; /* Espacio interno para la descripción */
-  text-align: center;
-  background-color: beige;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background-color: navy; /* Cambia el color al pasar el mouse */
 }
 
 @media (max-width: 768px) {
