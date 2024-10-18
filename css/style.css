@@ -136,6 +136,7 @@ button.active {
   color: navy;
   margin-left: 75px;
 }
+
 .sobre-mi-desc {
   display: flex;
   align-items: center; /* Alinea el contenido al inicio (izquierda) verticalmente */
@@ -363,10 +364,6 @@ body.oscuro #gmail i {
     color: red; /* Mantén el color rojo del icono de Gmail en modo oscuro */
 }
 
-body.oscuro .container img {
-  border: 2px solid white; /* Cambia el borde a blanco en modo oscuro */
-}
-
 
 
 
@@ -474,5 +471,16 @@ body.oscuro #Acerca{
     .galeria {
         grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
     }
+
+    #Sobremi{
+      text-align: center;
+      margin-left: 0;
+    }
+
+    .título-proyectos{
+      text-align: center;
+      margin-right: 0;
+    }
+
 }
   
