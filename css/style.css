@@ -309,7 +309,12 @@ button.active {
 }
 
 
-
+.formulario{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
 
 
 
@@ -498,7 +503,6 @@ body.oscuro #Acerca{
       margin-right: 20px;
       justify-content: center; /* Centra los botones horizontalmente */
     }
-
 
 }
   
