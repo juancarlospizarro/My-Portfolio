@@ -251,7 +251,22 @@
             <h3 id="despedida">¡Gracias por su visita!</h3>
             <br>            
             <br>
+            <div class="formulario">
+                <h6>Para cualquier consulta no dude en ponerse en contacto conmigo.</h6>
+                <br>
+                <form id="formulario" action="php/formulario.php" method="post">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" required><br><br>
+                    <label for="asunto">Asunto: </label>
+                    <input type="text" name="asunto" id="asunto" required><br><br>
+                    <label for="mensaje">Mensaje: </label>
+                    <input type="text" name="mensaje" id="mensaje" required><br><br>
+                    <input id="enviar" type="submit" value="Enviar">
+                </form>
+            </div>
+            
 
+            <br>
         <footer>
             <section id="acerca-de">
 
