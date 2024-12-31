@@ -57,6 +57,27 @@
   color: red;
 }
 
+.enlace_redes{
+  padding: 0.5%;
+  font-size:x-large;
+}
+
+.descargar{
+  text-decoration: none;
+  color: navy;
+  border: 2px solid navy;
+  padding: 1%;
+  border-radius: 25px;
+}
+
+.descargar:hover{
+  text-decoration: none;
+  color: white;
+  border: 2px solid navy;
+  padding: 1%;
+  background-color: navy;
+}
+
 /* Estilos botones */
 .buttons {
   margin-bottom: 20px;
@@ -64,24 +85,26 @@
 }
 
 button {
-  padding: 10px 20px;
-  margin-right: 10px;
-  border: 2px solid black;
-  border-radius: 10px;
+  padding: 1%;
+  margin-right: 1%;
+  border: 2px solid navy;
+  border-radius: 25px !important;
   background-color: white;
+  color: navy;
 }
 
 button:hover {
-  color: blue;
-  border-color: blue;
-  border-radius: 10px;
+  color: white;
+  border-color: navy;
+  border-radius: 25px;
+  background-color: navy;
 }
 
 button.active {
-  background-color: white;
-  color: blue;
+  background-color: navy;
+  color: white;
   border: 2px solid navy;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
 /* Estilo menu de navegación */
@@ -291,10 +314,6 @@ button.active {
   height: 10%;
   border-radius: 0;
 }
-
- #despedida{
-  text-align: center;
- }
 
 /* Sección Acerca de */
 
