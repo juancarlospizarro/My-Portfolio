@@ -166,6 +166,7 @@ button.active {
   justify-content: center; /* Alinea el contenido al inicio horizontalmente (izquierda) */
   gap: 20px; /* Espacio entre la imagen y el párrafo */
   margin-bottom: 20px; /* Espacio inferior después del contenido */
+  font-size: large;
 }
 
 .sobre-mi img {
@@ -241,6 +242,7 @@ button.active {
   justify-content: center; /* Alinea el contenido al inicio horizontalmente (izquierda) */
   gap: 20px; /* Espacio entre la imagen y el párrafo */
   margin-bottom: 20px; /* Espacio inferior después del contenido */
+  font-size: larger;
 }
 
 .mis-proyectos-desc img {
@@ -513,6 +515,22 @@ body.oscuro #Acerca{
       margin-left: 20px;
       margin-right: 20px;
       justify-content: center; /* Centra los botones horizontalmente */
+    }
+
+    .descargar{
+      text-decoration: none;
+      color: navy;
+      border: 2px solid navy;
+      padding: 3%;
+      border-radius: 25px;
+    }
+    
+    .descargar:hover{
+      text-decoration: none;
+      color: white;
+      border: 2px solid navy;
+      padding: 3%;
+      background-color: navy;
     }
 
 }
