@@ -15,6 +15,15 @@ proyecto.forEach(function(elemento) {
     } 
 });
 
+function agregarAño() {
+    const año = document.getElementById("año");
+    const año_actual = new Date().getFullYear();
+
+    año.textContent = `${año_actual}`; // Usar textContent como propiedad
+}
+
+agregarAño()
+
 var boton = document.querySelectorAll('.boton_funcionalidad');
 
 // Define la función del manejador de eventos
@@ -74,4 +83,6 @@ document.getElementById("boton_oscuro").addEventListener("click", function() {
         icono.classList.add("bi-moon");
     }
 });
+
+
 
