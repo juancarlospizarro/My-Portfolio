@@ -2,3 +2,15 @@ header a{
     text-decoration: none;
     color: black;
 }
+
+#sobremi a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.tarjetas{
+    border: 2px solid black;
+    padding: 5px;
+}
