@@ -1,16 +1,281 @@
-header a{
-    text-decoration: none;
-    color: black;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#sobremi a{
-    text-decoration: none;
-    color: black;
-    border: 2px solid black;
-    padding: 5px;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-.tarjetas{
-    border: 2px solid black;
-    padding: 5px;
+/* PALETA DE COLORES */
+:root {
+  --bg-light: #fdfdfd;
+  --bg-dark: #1e1e1e;
+  --card-bg: #ffffff;
+  --card-border: #bbbbbb;
+  --accent: #ff6f61; /* Coral */
+  --accent-hover: #ff897d;
+  --text-muted: #666;
+  --title-color: #222;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-dark);
+  padding: 15px 30px;
+  border-bottom: 2px solid #333;
+  flex-wrap: wrap;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.header nav a:hover {
+  color: var(--accent);
+}
+
+/* BOTONES IDIOMA */
+.header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-right: 4px;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.header button:hover {
+  opacity: 1;
+}
+
+.header .fi {
+  font-size: 1.1rem;
+}
+
+/* NOMBRE PRINCIPAL */
+body > a[href="#"] {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* SECCIONES */
+section {
+  margin: 40px auto;
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* SOBRE MI */
+section h2 {
+  font-size: 1.6rem;
+  color: var(--title-color);
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.sobremi-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sobremi-text {
+  flex: 1;
+}
+
+.sobremi-links {
+  margin-top: 10px;
+}
+
+.sobremi-links a {
+  display: inline-block;
+  margin: 8px 8px 0 0;
+  padding: 8px 14px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid var(--accent);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.sobremi-links a:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.sobremi-img {
+  max-width: 160px;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid var(--accent);
+  object-fit: cover;
+}
+
+/* TARJETAS */
+.tarjetas {
+  background-color: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tarjetas h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: var(--title-color);
+}
+
+.tarjetas h5 {
+  font-weight: normal;
+  color: var(--text-muted);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px 30px;
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: var(--bg-dark);
+  border-top: 1px solid #333;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .sobremi-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .sobremi-text {
+    flex: 2;
+    margin-right: 30px;
+  }
+
+  .sobremi-img {
+    flex: 1;
+  }
+
+  .header {
+    flex-wrap: nowrap;
+  }
+
+  .header nav {
+    margin-top: 0;
+  }
+}
+
+/* RESPONSIVE PARA MÓVILES */
+@media (max-width: 767px) {
+  /* Header */
+  .header {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  .header nav a {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  /* Botones idioma */
+  .header button {
+    padding: 6px;
+    font-size: 1rem;
+  }
+
+  /* Nombre principal */
+  body > a[href="#"] {
+    font-size: 1.5rem;
+    margin: 15px 10px;
+  }
+
+  /* Secciones */
+  section {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 30px 10px;
+  }
+
+  /* Sobre mí */
+  .sobremi-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sobremi-text {
+    margin-right: 0;
+  }
+
+  .sobremi-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid var(--accent);
+  }
+
+  /* Tarjetas */
+  .tarjetas {
+    padding: 15px;
+  }
+
+  .tarjetas h3 {
+    font-size: 1.1rem;
+  }
+
+  .tarjetas h5 {
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.85rem;
+    padding: 15px 10px;
+  }
 }

@@ -8,6 +8,8 @@ const translations = {
     daw: "Desarrollo de Aplicaciones Web",
     ingenieria: "Ingeniería Informática - Tecnologías Informáticas",
     proyectos_titulo: "Proyectos",
+    proyecto1: "Proyecto 1",
+    proyecto2: "Proyecto 2",
     footer: "Página web creada con HTML, CSS y JavaScript."
   },
   en: {
@@ -19,6 +21,8 @@ const translations = {
     daw: "Web Application Development",
     ingenieria: "Computer Engineering – Information Technologies",
     proyectos_titulo: "Projects",
+    proyecto1: "Project 1",
+    proyecto2: "Project 2",
     footer: "Website created with HTML, CSS, and JavaScript."
   },
   fr: {
@@ -30,6 +34,8 @@ const translations = {
     daw: "Développement d'applications web",
     ingenieria: "Génie informatique – Technologies de l'information",
     proyectos_titulo: "Projets",
+    proyecto1: "Projet 1",
+    proyecto2: "Projet 2",
     footer: "Site web créé avec HTML, CSS et JavaScript."
   },
   de: {
@@ -41,6 +47,8 @@ const translations = {
     daw: "Webanwendungsentwicklung",
     ingenieria: "Informatik – Informationstechnologien",
     proyectos_titulo: "Projekte",
+    proyecto1: "Projekt 1",
+    proyecto2: "Projekt 2",
     footer: "Website erstellt mit HTML, CSS und JavaScript."
   }
 };
