@@ -75,7 +75,7 @@ body {
 }
 
 /* NOMBRE PRINCIPAL */
-body > a[href="#"] {
+.nombre_titulo {
   display: block;
   text-align: center;
   font-size: 2rem;
@@ -84,6 +84,28 @@ body > a[href="#"] {
   font-weight: bold;
   text-decoration: none;
 }
+
+.perfil-img {
+  display: block;
+  margin: 10px auto 30px auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+}
+
+.perfil-titulo {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0.5rem auto 1.5rem;
+  color: var(--text-dark);
+  padding: 0 1rem;
+  max-width: 800px;
+  color: #ff6f61;
+}
+
 
 /* SECCIONES */
 section {
@@ -161,6 +183,10 @@ section h2 {
 .tarjetas h5 {
   font-weight: normal;
   color: var(--text-muted);
+}
+
+.tarjetas:hover{
+  border-color: #ff6f61;
 }
 
 /* FOOTER */
