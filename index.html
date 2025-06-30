@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title">Mi Portfolio</title>
+    <title data-i18n="title">Mi portfolio - Juan Carlos Pizarro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/portfolio_icon_transparente.png" type="image/x-icon">
 </head>
 <body>
     <header class="header">
@@ -27,16 +28,17 @@
     <p class="nombre_titulo">Juan Carlos Pizarro</p>
     <img class="perfil-img" src="img/WhatsApp Image 2024-09-29 at 08.36.49.jpeg" alt="Foto principal">
     <h3 class="perfil-titulo" data-i18n="perfil_titulo">Ingeniero de Datos y Desarrollador Web</h3>
-    <section class="sobremi" id="sobremi">
-    <h2 data-i18n="sobremi_titulo">Sobre mí</h2>
-    <div class="sobremi-content">
-        <div class="sobremi-text">
-        <p data-i18n="sobremi_texto">Hola, aqui va el sobre mi.</p>
-        <div class="sobremi-links">
+    <div class="titulo-links">
             <a target="_blank" href="https://github.com/juancarlospizarro">Github <i class="bi bi-github"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/juancarlospizarroalonso/">Linkedin <i class="bi bi-linkedin"></i></a>
             <a href="">CV <i class="bi bi-file-earmark-person-fill"></i></a>
         </div>
+    <section class="sobremi" id="sobremi">
+    <h2 data-i18n="sobremi_titulo">Sobre mí</h2>
+    <div class="sobremi-content">
+        <div class="sobremi-text">
+        <p data-i18n="sobremi_texto">Estudiante de Desarrollo de Aplicaciones Web con nota media de 9,75 y experiencia práctica como becario de Big Data en Ayesa, donde trabajé con Apache Spark, Scala y SQL. 
+            Me apasionan los datos, el backend y la automatización de procesos. Busco seguir desarrollándome como ingeniero de datos o desarrollador web, con interés en oportunidades Erasmus+ o puestos junior en Europa.</p>
         </div>
     </div>
     </section>
@@ -45,18 +47,48 @@
         <h2 data-i18n="experiencia_titulo">Experiencia</h2>
         <div class="tarjetas">
             <h3 data-i18n="becario_ayesa">Becario en Big Data</h3>
-            <h5><img src="https://imgs.search.brave.com/NzcOyrEjhtsqCg4yjUkobnFRcOFmQr_9lwUEsOj4xv0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dmVjdG9ybG9nby5l/cy93cC1jb250ZW50/L3VwbG9hZHMvMjAx/NS8xMS9sb2dvLXZl/Y3Rvcl9heWVzYS5q/cGc_ZXppbWdmbXQ9/bmc6d2VicC9uZ2Ni/MS9yczpkZXZpY2Uv/cnNjYjEtMQ" alt="Logo Ayesa" width="20" height="20"> Ayesa</h5>
+            <h4><img src="img/ayesa_logo.jpg" alt="Logo Ayesa" width="20" height="20"> <a target="_blank" class="enlaces_instituciones" href="https://www.ayesa.com/">Ayesa <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <p class="tarjeta-info">
+                <strong data-i18n="fecha">Fecha:</strong> Febrero 2025 – Marzo 2025
+            </p>
+            <p class="tarjeta-descripcion" data-i18n="descripcion_ayesa">
+                Apoyo al equipo de datos en tareas de análisis y transformación de grandes volúmenes de datos. Automatización de pipelines y creación de scripts para optimizar procesos ETL.
+            </p>
+            <p class="tarjeta-tecnologias">
+                <strong data-i18n="tecnologias">Tecnologías:</strong> Apache Spark, Scala, SQL, Git, Linux
+            </p>
         </div>
     </section>
     <section class="formacion" id="formacion">
         <h2 data-i18n="formacion_titulo">Formación</h2>
         <div class="tarjetas">
             <h3 data-i18n="daw">Desarrollo de Aplicaciones Web</h3>
-            <h5><img src="https://imgs.search.brave.com/aWiyrwxKfkLnl2RsXHrowdqWYAav-fATwkRvcjDTvzE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWxpYW56YWZwZHVh/bC5lcy93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wMS9JRVMt/Q0FNQVNfbG9nby5w/bmc" alt="Logo IES Camas" width="20" height="20"> IES Camas - Antonio Brisquet</h5>
+            <h4><img src="https://lh3.googleusercontent.com/stumscoDxTGVllZX-BKPd2x-PitK3izAXDNmQyGc_eDTFJwUQA63RSWcEej2s4bCWnjKsKf1oqd9DHIt4eyePpW9c76ctYUMgDAZez1eFkQoLlGr_MRm48X9N6TiGa3hA19s5rqliAs=w16383" alt="Logo IES Camas" width="20" height="20"> <a target="_blank" class="enlaces_instituciones" href="https://www.iescamas.es/home">IES Camas - Antonio Brisquet <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            
+            <p class="tarjeta-info">
+                <strong data-i18n="fecha">Fecha:</strong> 2024 – 2026<br>
+                <strong data-i18n="nota_media">Nota media:</strong> 9,75/10
+            </p>
+            <p class="tarjeta-descripcion" data-i18n="descripcion_daw">
+                Formación en desarrollo web tanto en frontend como en backend, gestión de bases de datos, despliegue en servidores y trabajo colaborativo.
+            </p>
+            <p class="tarjeta-tecnologias">
+                <strong data-i18n="tecnologias">Tecnologías:</strong> HTML, CSS, JavaScript, PHP, MySQL, Git, Laravel
+            </p>
         </div>
         <div class="tarjetas">
             <h3 data-i18n="ingenieria">Ingeniería Informática - Tecnologías Informáticas</h3>
-            <h5><img src="https://imgs.search.brave.com/0ob4I2qjDrt4RdW_TS0FjpZxTXFHqlf19CQrwjXbVJo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzE4LzEvdW5pdmVy/c2lkYWQtZGUtc2V2/aWxsYS1sb2dvLXBu/Z19zZWVrbG9nby0x/ODY0NDYucG5n" alt="Logo US" width="20" height="20"> Universidad de Sevilla</h5>
+            <h4><img src="https://www.us.es/sites/default/files/logoPNG_3.png" alt="Logo US" width="50" height="20"> <a target="_blank" class="enlaces_instituciones" href="https://www.us.es/">Universidad de Sevilla <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            
+            <p class="tarjeta-info">
+                <strong data-i18n="nota_media">Nota media:</strong> N/C (120 ECTS superados)
+            </p>
+            <p class="tarjeta-descripcion" data-i18n="descripcion_us">
+                Formación universitaria orientada a la resolución de problemas complejos de ingeniería mediante programación, estructuras de datos, bases de datos y sistemas distribuidos. Finalizado el segundo curso.
+            </p>
+            <p class="tarjeta-tecnologias">
+                <strong data-i18n="tecnologias">Tecnologías:</strong> Java, C, MySQL, Oracle, Python, Git, UML
+  </p>
         </div>
     </section>
     <section class="certificaciones" id="certificaciones">

@@ -20,8 +20,8 @@ body {
   --bg-dark: #1e1e1e;
   --card-bg: #ffffff;
   --card-border: #bbbbbb;
-  --accent: #ff6f61; /* Coral */
-  --accent-hover: #ff897d;
+  --accent: #3a8fd8; /* Azul suave tech */
+  --accent-hover: #63aaff;
   --text-muted: #666;
   --title-color: #222;
 }
@@ -103,9 +103,31 @@ body {
   color: var(--text-dark);
   padding: 0 1rem;
   max-width: 800px;
-  color: #ff6f61;
+  color: var(--accent);
 }
 
+.titulo-links {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.titulo-links a {
+  display: inline-block;
+  margin: 8px 8px 0 0;
+  padding: 8px 14px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid var(--accent);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.titulo-links a:hover {
+  background-color: var(--accent);
+  color: white;
+}
 
 /* SECCIONES */
 section {
@@ -134,36 +156,6 @@ section h2 {
   flex: 1;
 }
 
-.sobremi-links {
-  margin-top: 10px;
-}
-
-.sobremi-links a {
-  display: inline-block;
-  margin: 8px 8px 0 0;
-  padding: 8px 14px;
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-  border: 2px solid var(--accent);
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  background-color: transparent;
-}
-
-.sobremi-links a:hover {
-  background-color: var(--accent);
-  color: white;
-}
-
-.sobremi-img {
-  max-width: 160px;
-  height: auto;
-  border-radius: 12px;
-  border: 3px solid var(--accent);
-  object-fit: cover;
-}
-
 /* TARJETAS */
 .tarjetas {
   background-color: var(--card-bg);
@@ -180,14 +172,39 @@ section h2 {
   color: var(--title-color);
 }
 
-.tarjetas h5 {
+.tarjetas h4 {
   font-weight: normal;
   color: var(--text-muted);
 }
 
 .tarjetas:hover{
-  border-color: #ff6f61;
+  border-color: var(--accent);
 }
+
+.enlaces_instituciones{
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+.tarjeta-info {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.tarjeta-descripcion {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.tarjeta-tecnologias {
+  font-size: 0.9rem;
+  color: #444;
+  font-style: italic;
+}
+
 
 /* FOOTER */
 footer {
