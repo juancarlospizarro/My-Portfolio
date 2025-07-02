@@ -3,15 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fdfdfd;
   color: #222;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+  line-height: 1.7;
+  font-size: 16px;
 }
 
 /* PALETA DE COLORES */
@@ -19,11 +19,12 @@ body {
   --bg-light: #fdfdfd;
   --bg-dark: #1e1e1e;
   --card-bg: #ffffff;
-  --card-border: #bbbbbb;
-  --accent: #3a8fd8; /* Azul suave tech */
+  --card-border: #e0e0e0;
+  --accent: #3a8fd8;
   --accent-hover: #63aaff;
   --text-muted: #666;
-  --title-color: #222;
+  --title-color: #111;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 /* HEADER */
@@ -48,14 +49,13 @@ body {
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.3s ease;
 }
 
 .header nav a:hover {
   color: var(--accent);
 }
 
-/* BOTONES IDIOMA */
 .header button {
   background: none;
   border: none;
@@ -78,8 +78,8 @@ body {
 .nombre_titulo {
   display: block;
   text-align: center;
-  font-size: 2rem;
-  margin: 20px 0;
+  font-size: 2.5rem;
+  margin: 30px 0 10px;
   color: var(--accent);
   font-weight: bold;
   text-decoration: none;
@@ -87,41 +87,42 @@ body {
 
 .perfil-img {
   display: block;
-  margin: 10px auto 30px auto;
+  margin: 10px auto 30px;
   width: 140px;
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--accent);
+  box-shadow: var(--shadow);
 }
 
 .perfil-titulo {
   text-align: center;
+  margin: 0 auto;
   font-size: 1.6rem;
   font-weight: 600;
-  margin: 0.5rem auto 1.5rem;
-  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  color: var(--accent);
   padding: 0 1rem;
   max-width: 800px;
-  color: var(--accent);
 }
 
+/* ENLACES */
 .titulo-links {
-  margin-top: 10px;
   text-align: center;
+  margin-top: 15px;
 }
 
 .titulo-links a {
   display: inline-block;
-  margin: 8px 8px 0 0;
-  padding: 8px 14px;
+  margin: 6px;
+  padding: 10px 18px;
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
   border: 2px solid var(--accent);
-  border-radius: 20px;
+  border-radius: 25px;
   transition: all 0.3s ease;
-  background-color: transparent;
 }
 
 .titulo-links a:hover {
@@ -131,87 +132,176 @@ body {
 
 /* SECCIONES */
 section {
-  margin: 40px auto;
-  max-width: 1400px;
-  padding-left: 0;
-  padding-right: 0;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: 25px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent);
+  border-radius: 2px;
 }
 
 /* SOBRE MI */
-section h2 {
-  font-size: 1.6rem;
-  color: var(--title-color);
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-}
-
 .sobremi-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .sobremi-text {
   flex: 1;
+  font-size: 1.05rem;
+  color: #333;
 }
 
 /* TARJETAS */
 .tarjetas {
   background-color: var(--card-bg);
-  border: 2px solid var(--card-border);
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.tarjetas:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .tarjetas h3 {
+  font-size: 1.3rem;
   margin-bottom: 5px;
-  font-size: 1.2rem;
   color: var(--title-color);
 }
 
 .tarjetas h4 {
-  font-weight: normal;
-  color: var(--text-muted);
-}
-
-.tarjetas:hover{
-  border-color: var(--accent);
-}
-
-.enlaces_instituciones{
-  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
   color: var(--text-muted);
 }
 
 .tarjeta-info {
   font-size: 0.9rem;
   color: var(--text-muted);
-  margin-bottom: 8px;
+  margin: 10px 0;
 }
 
 .tarjeta-descripcion {
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 1rem;
   color: #333;
-  margin-bottom: 8px;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 .tarjeta-tecnologias {
   font-size: 0.9rem;
-  color: #444;
   font-style: italic;
+  color: #444;
+}
+
+/* ENLACE INSTITUCIONES */
+.enlaces_instituciones {
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+/* CONTACTO */
+
+#contacto {
+  margin-top: 40px;
+  padding: 20px;
+  /* Eliminamos el fondo y la sombra */
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#contacto h2 {
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(58, 143, 216, 0.2);
+}
+
+button[type="submit"] {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--accent-hover);
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.85rem;
+  display: none;
+  margin-top: 5px;
+}
+
+.form-status {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 20px 30px;
+  padding: 25px 30px;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   background-color: var(--bg-dark);
   border-top: 1px solid #333;
 }
@@ -242,9 +332,7 @@ footer {
   }
 }
 
-/* RESPONSIVE PARA MÓVILES */
 @media (max-width: 767px) {
-  /* Header */
   .header {
     padding: 15px 20px;
     flex-direction: column;
@@ -254,7 +342,6 @@ footer {
 
   .header nav {
     width: 100%;
-    display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 0;
@@ -267,58 +354,32 @@ footer {
     padding: 8px 0;
   }
 
-  /* Botones idioma */
   .header button {
     padding: 6px;
     font-size: 1rem;
   }
 
-  /* Nombre principal */
-  body > a[href="#"] {
-    font-size: 1.5rem;
-    margin: 15px 10px;
+  .nombre_titulo {
+    font-size: 1.8rem;
+    margin: 20px 10px;
   }
 
-  /* Secciones */
   section {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 30px 10px;
+    padding: 0 15px;
+    margin: 30px 0;
   }
 
-  /* Sobre mí */
   .sobremi-content {
     flex-direction: column;
-    gap: 15px;
-  }
-
-  .sobremi-text {
-    margin-right: 0;
   }
 
   .sobremi-img {
     max-width: 100%;
-    height: auto;
     border-radius: 12px;
     border: 3px solid var(--accent);
   }
 
-  /* Tarjetas */
   .tarjetas {
-    padding: 15px;
-  }
-
-  .tarjetas h3 {
-    font-size: 1.1rem;
-  }
-
-  .tarjetas h5 {
-    font-size: 0.9rem;
-  }
-
-  /* Footer */
-  footer {
-    font-size: 0.85rem;
-    padding: 15px 10px;
+    padding: 18px;
   }
 }

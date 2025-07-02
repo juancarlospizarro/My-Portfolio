@@ -17,6 +17,7 @@
             <a href="#formacion" data-i18n="formacion_titulo">Formación</a>
             <a href="#certificaciones" data-i18n="certificaciones_titulo">Certificaciones</a>
             <a href="#proyectos" data-i18n="proyectos_titulo">Proyectos</a>
+            <a href="#contacto" data-i18n="contacto_titulo">Contacto</a>
         </nav>
         <div class="language-switcher">
             <button onclick="setLanguage('es')"><span class="fi fi-es"></span></button>
@@ -25,7 +26,7 @@
             <button onclick="setLanguage('de')"><span class="fi fi-de"></span></button>
         </div>
     </header>
-    <p class="nombre_titulo">Juan Carlos Pizarro</p>
+    <h1 class="nombre_titulo">Juan Carlos Pizarro</h1>
     <img class="perfil-img" src="img/WhatsApp Image 2024-09-29 at 08.36.49.jpeg" alt="Foto principal">
     <h3 class="perfil-titulo" data-i18n="perfil_titulo">Ingeniero de Datos y Desarrollador Web</h3>
     <div class="titulo-links">
@@ -47,7 +48,7 @@
         <h2 data-i18n="experiencia_titulo">Experiencia</h2>
         <div class="tarjetas">
             <h3 data-i18n="becario_ayesa">Becario en Big Data</h3>
-            <h4><img src="img/ayesa_logo.jpg" alt="Logo Ayesa" width="20" height="20"> <a target="_blank" class="enlaces_instituciones" href="https://www.ayesa.com/">Ayesa <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <h4><img src="img/AYESA_2024.webp" alt="Logo Ayesa" width="30" height="30"> <a target="_blank" class="enlaces_instituciones" href="https://www.ayesa.com/">Ayesa <i class="bi bi-box-arrow-up-right"></i></a></h4>
             <p class="tarjeta-info">
                 <strong data-i18n="fecha">Fecha:</strong> Febrero 2025 – Marzo 2025
             </p>
@@ -63,7 +64,7 @@
         <h2 data-i18n="formacion_titulo">Formación</h2>
         <div class="tarjetas">
             <h3 data-i18n="daw">Desarrollo de Aplicaciones Web</h3>
-            <h4><img src="https://lh3.googleusercontent.com/stumscoDxTGVllZX-BKPd2x-PitK3izAXDNmQyGc_eDTFJwUQA63RSWcEej2s4bCWnjKsKf1oqd9DHIt4eyePpW9c76ctYUMgDAZez1eFkQoLlGr_MRm48X9N6TiGa3hA19s5rqliAs=w16383" alt="Logo IES Camas" width="20" height="20"> <a target="_blank" class="enlaces_instituciones" href="https://www.iescamas.es/home">IES Camas - Antonio Brisquet <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <h4><img src="img/Logo IES CAMAS Ampliado.png" alt="Logo IES Camas" width="30" height="30"> <a target="_blank" class="enlaces_instituciones" href="https://www.iescamas.es/home">IES Camas - Antonio Brisquet <i class="bi bi-box-arrow-up-right"></i></a></h4>
             
             <p class="tarjeta-info">
                 <strong data-i18n="fecha">Fecha:</strong> 2024 – 2026<br>
@@ -78,7 +79,7 @@
         </div>
         <div class="tarjetas">
             <h3 data-i18n="ingenieria">Ingeniería Informática - Tecnologías Informáticas</h3>
-            <h4><img src="https://www.us.es/sites/default/files/logoPNG_3.png" alt="Logo US" width="50" height="20"> <a target="_blank" class="enlaces_instituciones" href="https://www.us.es/">Universidad de Sevilla <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <h4><img src="img/logoPNG_3.png" alt="Logo US" width="70" height="30"> <a target="_blank" class="enlaces_instituciones" href="https://www.us.es/">Universidad de Sevilla <i class="bi bi-box-arrow-up-right"></i></a></h4>
             
             <p class="tarjeta-info">
                 <strong data-i18n="nota_media">Nota media:</strong> N/C (120 ECTS superados)
@@ -94,10 +95,16 @@
     <section class="certificaciones" id="certificaciones">
         <h2 data-i18n="certificaciones_titulo">Certificaciones</h2>
         <div class="tarjetas">
-            <h3 data-i18n="certificacion1">Certificación 1</h3>
+            <h3 data-i18n="certificacion1">Introducción a MongoDB</h3>
         </div>
         <div class="tarjetas">
-            <h3 data-i18n="certificacion2">Certificación 2</h3>
+            <h3 data-i18n="certificacion2">APTIS</h3>
+        </div>
+        <div class="tarjetas">
+            <h3 data-i18n="certificacion1">Career Essentials</h3>
+        </div>
+        <div class="tarjetas">
+            <h3 data-i18n="certificacion2">Python for Data Science</h3>
         </div>
     </section>
     <section class="proyectos" id="proyectos">
@@ -109,12 +116,37 @@
             <h3 data-i18n="proyecto2">Proyecto 2</h3>
         </div>
     </section>
+    <section class="contacto" id="contacto">
+        <h2 data-i18n="contacto_titulo">Contacto</h2>
+        <form id="form-contacto" novalidate>
+            <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+            <small class="error-msg"></small>
+            </div>
 
+            <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+            <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <small class="error-msg"></small>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <p id="form-status" class="form-status"></p>
+        </form>
+    </section>
     
 
     <footer>
-        <p data-i18n="footer">Página web creada con HTML, CSS y JavaScript.</p>
+        <p>&copy; <span id="year"></span> <span data-i18n="footer">Página web creada con HTML, CSS y JavaScript.</span></p>
     </footer>
+    <script src="js/index.js"></script>
     <script src="js/i18n.js"></script>
 </body>
 </html>
