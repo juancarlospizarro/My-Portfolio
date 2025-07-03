@@ -1,34 +1,45 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+emailjs.init("KlnE6-nOAlaYk7b96");
 
-  const form = document.getElementById('form-contacto');
-  const statusMsg = document.getElementById('form-status');
+function showAlert(type, message) {
+  const container = document.getElementById('alert-container');
+  if (!container) return;
 
-  form.addEventListener('submit', function (e) {
+  const alertDiv = document.createElement('div');
+  alertDiv.classList.add('alert');
+  alertDiv.classList.add(type === 'success' ? 'alert-success' : 'alert-error');
+
+  alertDiv.textContent = message;
+
+  container.appendChild(alertDiv);
+
+  setTimeout(() => {
+    alertDiv.style.opacity = '0';
+    setTimeout(() => container.removeChild(alertDiv), 300);
+  }, 3000);
+}
+
+
+  // 2) Espera a que el DOM esté listo, por si tu script está en <head>
+  document.addEventListener("DOMContentLoaded", () => {
+
+    // 3) Selecciona el formulario
+    const form = document.getElementById("form-contacto");
+
+    // 4) Escucha el evento submit
+    form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Validación básica
-    let isValid = true;
-    const inputs = form.querySelectorAll('input, textarea');
-    const errorMsgs = form.querySelectorAll('.error-msg');
-    errorMsgs.forEach(msg => msg.textContent = "");
-
-    inputs.forEach(input => {
-      if (!input.checkValidity()) {
-        isValid = false;
-        input.nextElementSibling.textContent = 'Este campo es obligatorio o inválido.';
-      }
+    emailjs
+      .sendForm("service_mey3jxv", "template_zu1yz3d", this)
+      .then(() => {
+        showAlert('success', 'Mensaje enviado correctamente.');
+        form.reset();
+      })
+      .catch((err) => {
+        console.error("EmailJS error:", err);
+        showAlert('error', 'Error al enviar el mensaje.');
+      });
     });
-
-    if (!isValid) return;
-
-    // Simular envío
-    statusMsg.textContent = "Enviando mensaje...";
-    statusMsg.style.color = "black";
-
-    setTimeout(() => {
-      statusMsg.textContent = "¡Mensaje enviado correctamente!";
-      statusMsg.style.color = "green";
-      form.reset();
-    }, 1500);
   });

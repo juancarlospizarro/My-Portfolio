@@ -20,10 +20,10 @@
             <a href="#contacto" data-i18n="contacto_titulo">Contacto</a>
         </nav>
         <div class="language-switcher">
-            <button onclick="setLanguage('es')"><span class="fi fi-es"></span></button>
-            <button onclick="setLanguage('en')"><span class="fi fi-gb"></span></button>
-            <button onclick="setLanguage('fr')"><span class="fi fi-re"></span></button>
-            <button onclick="setLanguage('de')"><span class="fi fi-de"></span></button>
+            <button id="español" data-i18n="español" title="Español" onclick="setLanguage('es')"><span class="fi fi-es"></span></button>
+            <button id="ingles" data-i18n="ingles" title="Inglés" onclick="setLanguage('en')"><span class="fi fi-gb"></span></button>
+            <button id="frances" data-i18n="frances" title="Francés" onclick="setLanguage('fr')"><span class="fi fi-re"></span></button>
+            <button id="aleman" data-i18n="aleman" title="Alemán" onclick="setLanguage('de')"><span class="fi fi-de"></span></button>
         </div>
     </header>
     <h1 class="nombre_titulo">Juan Carlos Pizarro</h1>
@@ -48,63 +48,116 @@
         <h2 data-i18n="experiencia_titulo">Experiencia</h2>
         <div class="tarjetas">
             <h3 data-i18n="becario_ayesa">Becario en Big Data</h3>
-            <h4><img src="img/AYESA_2024.webp" alt="Logo Ayesa" width="30" height="30"> <a target="_blank" class="enlaces_instituciones" href="https://www.ayesa.com/">Ayesa <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4>
+            <a target="_blank" class="enlaces_instituciones" href="https://www.ayesa.com/">
+                Ayesa <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+            </h4>
             <p class="tarjeta-info">
-                <strong data-i18n="fecha">Fecha:</strong> Febrero 2025 – Marzo 2025
+            <strong data-i18n="fecha_titulo">Fecha:</strong> <span data-i18n="fecha_ayesa">Febrero 2025 – Marzo 2025</span>
             </p>
             <p class="tarjeta-descripcion" data-i18n="descripcion_ayesa">
-                Apoyo al equipo de datos en tareas de análisis y transformación de grandes volúmenes de datos. Automatización de pipelines y creación de scripts para optimizar procesos ETL.
+            Apoyo al equipo de datos en tareas de análisis y transformación de grandes volúmenes de datos. Automatización de pipelines y creación de scripts para optimizar procesos ETL.
             </p>
             <p class="tarjeta-tecnologias">
-                <strong data-i18n="tecnologias">Tecnologías:</strong> Apache Spark, Scala, SQL, Git, Linux
+            <strong data-i18n="tecnologias">Tecnologías:</strong> Apache Spark, Scala, SQL, Git, Linux
             </p>
+        </div>
+            <img src="img/AYESA_2024.webp" alt="Logo Ayesa" class="tarjeta-img"/>
+        </div>
         </div>
     </section>
     <section class="formacion" id="formacion">
         <h2 data-i18n="formacion_titulo">Formación</h2>
         <div class="tarjetas">
-            <h3 data-i18n="daw">Desarrollo de Aplicaciones Web</h3>
-            <h4><img src="img/Logo IES CAMAS Ampliado.png" alt="Logo IES Camas" width="30" height="30"> <a target="_blank" class="enlaces_instituciones" href="https://www.iescamas.es/home">IES Camas - Antonio Brisquet <i class="bi bi-box-arrow-up-right"></i></a></h4>
-            
-            <p class="tarjeta-info">
-                <strong data-i18n="fecha">Fecha:</strong> 2024 – 2026<br>
-                <strong data-i18n="nota_media">Nota media:</strong> 9,75/10
-            </p>
-            <p class="tarjeta-descripcion" data-i18n="descripcion_daw">
-                Formación en desarrollo web tanto en frontend como en backend, gestión de bases de datos, despliegue en servidores y trabajo colaborativo.
-            </p>
-            <p class="tarjeta-tecnologias">
-                <strong data-i18n="tecnologias">Tecnologías:</strong> HTML, CSS, JavaScript, PHP, MySQL, Git, Laravel
-            </p>
+        <h3 data-i18n="daw">Desarrollo de Aplicaciones Web</h3>
+        <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+                <h4>
+                    <a target="_blank" class="enlaces_instituciones" href="https://www.iescamas.es/home">
+                        IES Camas - Antonio Brisquet <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </h4>
+                <p class="tarjeta-info">
+                    <strong data-i18n="fecha_titulo">Fecha:</strong> 2024 – 2026<br>
+                    <strong data-i18n="nota_media">Nota media:</strong> 9,75/10
+                </p>
+                <p class="tarjeta-descripcion" data-i18n="descripcion_daw">
+                    Formación en desarrollo web tanto en frontend como en backend, gestión de bases de datos, despliegue en servidores y trabajo colaborativo.
+                </p>
+                <p class="tarjeta-tecnologias">
+                    <strong data-i18n="tecnologias">Tecnologías:</strong> HTML, CSS, JavaScript, PHP, MySQL, Git, Laravel
+                </p>
+            </div>
+            <img src="img/Logo IES CAMAS Ampliado.png" alt="Logo IES Camas" class="tarjeta-img" />
         </div>
-        <div class="tarjetas">
-            <h3 data-i18n="ingenieria">Ingeniería Informática - Tecnologías Informáticas</h3>
-            <h4><img src="img/logoPNG_3.png" alt="Logo US" width="70" height="30"> <a target="_blank" class="enlaces_instituciones" href="https://www.us.es/">Universidad de Sevilla <i class="bi bi-box-arrow-up-right"></i></a></h4>
-            
-            <p class="tarjeta-info">
-                <strong data-i18n="nota_media">Nota media:</strong> N/C (120 ECTS superados)
-            </p>
-            <p class="tarjeta-descripcion" data-i18n="descripcion_us">
-                Formación universitaria orientada a la resolución de problemas complejos de ingeniería mediante programación, estructuras de datos, bases de datos y sistemas distribuidos. Finalizado el segundo curso.
-            </p>
-            <p class="tarjeta-tecnologias">
-                <strong data-i18n="tecnologias">Tecnologías:</strong> Java, C, MySQL, Oracle, Python, Git, UML
-  </p>
+    </div>
+    <div class="tarjetas">
+        <h3 data-i18n="ingenieria">Ingeniería Informática - Tecnologías Informáticas</h3>
+        <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+                <h4>
+                    <a target="_blank" class="enlaces_instituciones" href="https://www.us.es/">
+                        Universidad de Sevilla <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </h4>
+                <p class="tarjeta-info">
+                    <strong data-i18n="fecha_titulo">Fecha:</strong> 2019 - <br>
+                    <strong data-i18n="nota_media">Nota media:</strong> N/C (120 ECTS <span data-i18n="superados">superados</span>)
+                </p>
+                <p class="tarjeta-descripcion" data-i18n="descripcion_us">
+                    Formación universitaria orientada a la resolución de problemas complejos de ingeniería mediante programación, estructuras de datos, bases de datos y sistemas distribuidos. Finalizado el segundo curso.
+                </p>
+                <p class="tarjeta-tecnologias">
+                    <strong data-i18n="tecnologias">Tecnologías:</strong> Java, C, MySQL, Oracle, Python, Git, UML
+                </p>
+            </div>
+            <img src="img/logoPNG_3.png" alt="Logo US" class="tarjeta-img" />
         </div>
+    </div>
     </section>
     <section class="certificaciones" id="certificaciones">
         <h2 data-i18n="certificaciones_titulo">Certificaciones</h2>
         <div class="tarjetas">
-            <h3 data-i18n="certificacion1">Introducción a MongoDB</h3>
+            <h3>Introduction to MongoDB</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4><a target="_blank" class="enlaces_instituciones" href="https://learn.mongodb.com/learning-paths/introduction-to-mongodb">MongoDB <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <h5><a data-i18n="certificado_enlace" target="_blank" href="https://learn.mongodb.com/c/2K_9tj6qTUS_DOo7GxiWBw">Certificado</a></h5>
+        </div>
+        <img src="img/mongodb-logo-png_seeklogo-444845.webp" alt="Logo MongoDB" class="tarjeta-img"> 
+            </div>
         </div>
         <div class="tarjetas">
-            <h3 data-i18n="certificacion2">APTIS</h3>
+            <h3>Aptis ESOL General C1 (CEFR)</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4><a target="_blank" class="enlaces_instituciones" href="https://www.britishcouncil.org/">British Council <i class="bi bi-box-arrow-up-right"></i></a></h4>
+        </div>
+        <img src="img/lg-67616c4372dec-British-Council.webp" alt="Logo British Council" class="tarjeta-img">
+            </div>
         </div>
         <div class="tarjetas">
-            <h3 data-i18n="certificacion1">Career Essentials</h3>
+            <h3>Career Essentials in Data Analysis by Microsoft and LinkedIn</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4><a target="_blank" class="enlaces_instituciones" href="https://www.linkedin.com/learning/paths/career-essentials-in-data-analysis-by-microsoft-and-linkedin">Microsoft & Linkedin <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <h5><a data-i18n="certificado_enlace" target="_blank" href="https://www.linkedin.com/learning/certificates/bfd1927b00104b2747fc4d295baa3bf4d03072507bf04f48db1f46dfd10f00da">Certificado</a></h5>
+        </div>
+        <img src="img/Microsoft-Logo-PNG-Image-HD.webp" alt="Logo Microsoft" class="tarjeta-img">
+            </div>
         </div>
         <div class="tarjetas">
-            <h3 data-i18n="certificacion2">Python for Data Science</h3>
+            <h3>Python for Data Science</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4><a target="_blank" class="enlaces_instituciones" href="https://cognitiveclass.ai/courses/python-for-data-science">IBM <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <h5><a data-i18n="certificado_enlace" target="_blank" href="https://courses.cognitiveclass.ai/certificates/ae522619108943cb90b68391946484e0">Certificado</a></h5>
+        </div>
+        <img src="img/IBM-Logo-PNG.webp" alt="Logo IBM" class="tarjeta-img">
+            </div>
         </div>
     </section>
     <section class="proyectos" id="proyectos">
@@ -120,32 +173,33 @@
         <h2 data-i18n="contacto_titulo">Contacto</h2>
         <form id="form-contacto" novalidate>
             <div class="form-group">
-            <label for="nombre">Nombre:</label>
+            <label for="nombre" data-i18n="contacto_nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required />
             <small class="error-msg"></small>
             </div>
 
             <div class="form-group">
-            <label for="email">Correo electrónico:</label>
+            <label for="email" data-i18n="contacto_correo">Correo electrónico:</label>
             <input type="email" id="email" name="email" required />
             <small class="error-msg"></small>
             </div>
 
             <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
+            <label for="mensaje" data-i18n="contacto_mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
             <small class="error-msg"></small>
             </div>
 
-            <button type="submit">Enviar</button>
-            <p id="form-status" class="form-status"></p>
+            <button type="submit" data-i18n="contacto_enviar">Enviar</button>
         </form>
+        <div id="alert-container"></div>
     </section>
     
 
     <footer>
         <p>&copy; <span id="year"></span> <span data-i18n="footer">Página web creada con HTML, CSS y JavaScript.</span></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/i18n.js"></script>
 </body>

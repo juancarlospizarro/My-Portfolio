@@ -170,6 +170,10 @@ section h2::after {
 
 /* TARJETAS */
 .tarjetas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 14px;
@@ -177,6 +181,33 @@ section h2::after {
   margin-bottom: 25px;
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
+}
+
+.tarjeta-texto {
+  flex: 1; /* Ocupa el espacio restante */
+}
+
+.tarjeta-img img {
+  max-width: 180px;  /* Tamaño grande pero controlado */
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: var(--shadow);
+}
+
+.tarjeta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.tarjeta-img {
+  max-width: 150px; /* Puedes ajustar el tamaño */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  object-fit: contain;
 }
 
 .tarjetas:hover {
@@ -293,6 +324,33 @@ button[type="submit"]:hover {
   text-align: center;
   font-weight: 500;
   margin-top: 10px;
+}
+
+#alert-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  z-index: 9999;
+}
+
+.alert {
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}
+
+.alert-success {
+  background-color: #4caf50; /* verde */
+}
+
+.alert-error {
+  background-color: #f44336; /* rojo */
 }
 
 
