@@ -42,4 +42,32 @@ function showAlert(type, message) {
         showAlert('error', 'Error al enviar el mensaje.');
       });
     });
+
+     const cards = document.querySelectorAll('.proyecto');
+  const botones = document.querySelectorAll('.filtro');
+
+  botones.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // 1. Actualiza estado visual del botón
+      botones.forEach(b => b.classList.remove('activo'));
+      btn.classList.add('activo');
+
+      // 2. Filtra
+      const filtro = btn.dataset.filter; // "web", "bigdata" o "all"
+      cards.forEach(card => {
+        const cats = card.dataset.cat.split(',');
+        const show = filtro === 'all' || cats.includes(filtro);
+        card.style.display = show ? 'flex' : 'none'; // "flex" para mantener tu layout
+      });
+
+      // 3. Opcional: guarda el filtro en la URL (#web) para compartir enlaces
+      history.replaceState(null, '', filtro === 'all' ? '#proyectos' : `#${filtro}`);
+    });
+  });
+
+  // Si el usuario llega con #web o #bigdata ya aplicado
+  const hash = location.hash.replace('#', '');
+  const firstBtn = [...botones].find(b => b.dataset.filter === hash);
+  if (firstBtn) firstBtn.click();
+   
   });

@@ -162,11 +162,141 @@
     </section>
     <section class="proyectos" id="proyectos">
         <h2 data-i18n="proyectos_titulo">Proyectos</h2>
-        <div class="tarjetas">
-            <h3 data-i18n="proyecto1">Proyecto 1</h3>
+        <div class="filtros-proyectos">
+            <button class="filtro activo" data-filter="all" data-i18n="proyecto_todos">Todos</button>
+            <button class="filtro" data-filter="web" data-i18n="proyecto_web">Web</button>
+            <button class="filtro" data-filter="bigdata" data-i18n="proyecto_bigdata">Big Data</button>
         </div>
-        <div class="tarjetas">
-            <h3 data-i18n="proyecto2">Proyecto 2</h3>
+        <div class="tarjetas proyecto" data-cat="web">
+            <h3 data-i18n="proyecto_sportscars">Sports Cars</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4>
+            <a target="_blank" class="enlaces_instituciones" href="https://github.com/juancarlospizarro/Sports-Cars">
+                Github <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+            </h4>
+            <p class="tarjeta-info">
+            </p>
+            <p class="tarjeta-descripcion" data-i18n="descripcion_sportscars">
+            Este es un proyecto en el cual diseño un simple sitio web simulando una web de venta de coches deportivos. Este proyecto está enfocado en el desarrollo Frontend y el diseño de páginas web.
+            </p>
+            <p class="tarjeta-tecnologias">
+            <strong data-i18n="tecnologias">Tecnologías:</strong> HTML5, CSS3, JavaScript, Bootstrap, Visual Studio Code
+            </p>
+        </div>
+            <img src="img/LogoSample_ByTailorBrands.jpg" alt="Logo Sports Cars" class="tarjeta-img"/>
+        </div>
+        </div>
+        </div>
+        <div class="tarjetas proyecto" data-cat="web">
+            <h3 data-i18n="proyecto_andalingo">Andalingo</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4>
+            <a target="_blank" class="enlaces_instituciones" href="https://github.com/juancarlospizarro/Andalingo">
+                Github <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+            </h4>
+            <p class="tarjeta-info">
+            </p>
+            <p class="tarjeta-descripcion" data-i18n="descripcion_andalingo">
+            Este es un proyecto en el cual diseño una simple página web donde se puede aprender palabras y expresiones típicas de Andalucía. Este proyecto está enfocado en el desarrollo Backend y en la comunicación de la base de datos con la web.
+            </p>
+            <p class="tarjeta-tecnologias">
+            <strong data-i18n="tecnologias">Tecnologías:</strong> HTML5, CSS3, JavaScript, Python, Flask, MySQL, SQL, Visual Studio Code
+            </p>
+        </div>
+            <img src="img/Wikiproyecto_Andalucía.png" alt="Logo Andalingo" class="tarjeta-img"/>
+        </div>
+        </div>
+        </div>
+        <div class="tarjetas proyecto" data-cat="web">
+            <h3 data-i18n="proyecto_tmdb">TMDB Automatización</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4>
+            <a target="_blank" class="enlaces_instituciones" href="https://github.com/juancarlospizarro/TMDB-Automation">
+                Github <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+            </h4>
+            <p class="tarjeta-info">
+            </p>
+            <p class="tarjeta-descripcion" data-i18n="descripcion_tmdb">
+            Este es un proyecto en el cual diseño un correo automatico para enviar un mensaje por correo electrónico con la información acerca de las películas más populares en el momento en la plataforma TMDB.
+            </p>
+            <p class="tarjeta-tecnologias">
+            <strong data-i18n="tecnologias">Tecnologías:</strong> Python, BeautifulSoup, Smtplib, HTML, CSS</p>
+        </div>
+            <img src="img/visualización_mensaje.png" alt="Logo TMDB" class="tarjeta-img"/>
+        </div>
+        </div>
+        </div>
+        <div class="tarjetas proyecto" data-cat="bigdata">
+            <h3 data-i18n="proyecto_f1">F1 Analisis</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4>
+            <a target="_blank" class="enlaces_instituciones" href="https://github.com/juancarlospizarro/F1-Analysis">
+                Github <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+            </h4>
+            <p class="tarjeta-info">
+            </p>
+            <p class="tarjeta-descripcion" data-i18n="descripcion_f1">
+            Este es un proyecto en el cual realizo una limpieza y transformación de un dataset relacionado con todas las estadísticas acerca de la Fórmula 1 en Microsoft Excel para su posterior análisis y visualización en Microsoft Power BI.
+            </p>
+            <p class="tarjeta-tecnologias">
+            <strong data-i18n="tecnologias">Tecnologías:</strong> Microsoft Excel, Microsoft Power BI, Micorsoft Power Query
+            </p>
+        </div>
+            <img src="img/constructors.png" alt="Logo F1 Análisis" class="tarjeta-img"/>
+        </div>
+        </div>
+        </div>
+        <div class="tarjetas proyecto" data-cat="bigdata">
+            <h3 data-i18n="proyecto_nba">Jugadores NBA Análisis</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4>
+            <a target="_blank" class="enlaces_instituciones" href="https://github.com/juancarlospizarro/NBA-Players-Analysis">
+                Github <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+            </h4>
+            <p class="tarjeta-info">
+            </p>
+            <p class="tarjeta-descripcion" data-i18n="descripcion_nba">
+            Este es un proyecto en el que he realizado el análisis de los jugadores de la NBA desde su inicio hasta ahora. En concreto me he enfocado en aquellos que no fueron drafteados, es decir, no fueron elegidos en el draft pero posteriormente fichan por alguna franquicia.
+            </p>
+            <p class="tarjeta-tecnologias">
+            <strong data-i18n="tecnologias">Tecnologías:</strong> Python, Pandas, Matplotlib, Jupyter Notebook, Visual Studio Code
+            </p>
+        </div>
+            <img src="img/undrafted-by-age.png" alt="Logo NBA" class="tarjeta-img"/>
+        </div>
+        </div>
+        </div>
+        <div class="tarjetas proyecto" data-cat="bigdata">
+            <h3 data-i18n="proyecto_euro24">Final EURO 2024 Análisis</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4>
+            <a target="_blank" class="enlaces_instituciones" href="https://github.com/juancarlospizarro/Final-Euro-2024">
+                Github <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+            </h4>
+            <p class="tarjeta-info">
+            </p>
+            <p class="tarjeta-descripcion" data-i18n="descripcion_euro24">
+            Este es un proyecto en el cual a partir de un conjunto de datos extraidos de la API pública de StatsBomb, se analizan los pases que han dado aquellos jugadores que disputaron la final de la Eurocopa 2024.
+            </p>
+            <p class="tarjeta-tecnologias">
+            <strong data-i18n="tecnologias">Tecnologías:</strong> Python, Pandas, Matplotlib, MPLSoccer, StatsBomb API, Jupyter Notebook
+            </p>
+        </div>
+            <img src="img/Fabian 1 half.png" alt="Logo EURO24" class="tarjeta-img"/>
+        </div>
+        </div>
         </div>
     </section>
     <section class="contacto" id="contacto">

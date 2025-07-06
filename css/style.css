@@ -270,6 +270,34 @@ section h2::after {
   color: var(--text-muted);
 }
 
+
+/* PROYECTOS */
+
+.filtros-proyectos {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.filtro {
+  background: none;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 8px 18px;
+  margin: 0 6px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background .25s;
+  font-weight: 500;
+  font: inherit;
+}
+
+.filtro.activo,
+.filtro:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+
 /* CONTACTO */
 
 #contacto {
