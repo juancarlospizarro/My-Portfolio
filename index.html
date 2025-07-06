@@ -12,11 +12,10 @@
 <body>
     <header class="header">
         <nav>
-            <a href="#sobremi" data-i18n="sobremi_titulo">Sobre mí</a>
             <a href="#experiencia" data-i18n="experiencia_titulo">Experiencia</a>
             <a href="#formacion" data-i18n="formacion_titulo">Formación</a>
-            <a href="#certificaciones" data-i18n="certificaciones_titulo">Certificaciones</a>
             <a href="#proyectos" data-i18n="proyectos_titulo">Proyectos</a>
+            <a href="#certificaciones" data-i18n="certificaciones_titulo">Certificaciones</a>
             <a href="#contacto" data-i18n="contacto_titulo">Contacto</a>
         </nav>
         <div class="language-switcher">
@@ -26,24 +25,22 @@
             <button id="aleman" data-i18n="aleman" title="Alemán" onclick="setLanguage('de')"><span class="fi fi-de"></span></button>
         </div>
     </header>
-    <h1 class="nombre_titulo">Juan Carlos Pizarro</h1>
+    <div class="header-perfil">
+        <h1 class="nombre_titulo">Juan Carlos Pizarro</h1>
     <img class="perfil-img" src="img/WhatsApp Image 2024-09-29 at 08.36.49.jpeg" alt="Foto principal">
+    </div>
     <h3 class="perfil-titulo" data-i18n="perfil_titulo">Ingeniero de Datos y Desarrollador Web</h3>
-    <div class="titulo-links">
-            <a target="_blank" href="https://github.com/juancarlospizarro">Github <i class="bi bi-github"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/juancarlospizarroalonso/">Linkedin <i class="bi bi-linkedin"></i></a>
-            <a href="">CV <i class="bi bi-file-earmark-person-fill"></i></a>
-        </div>
-    <section class="sobremi" id="sobremi">
-    <h2 data-i18n="sobremi_titulo">Sobre mí</h2>
     <div class="sobremi-content">
         <div class="sobremi-text">
         <p data-i18n="sobremi_texto">Estudiante de Desarrollo de Aplicaciones Web con nota media de 9,75 y experiencia práctica como becario de Big Data en Ayesa, donde trabajé con Apache Spark, Scala y SQL. 
             Me apasionan los datos, el backend y la automatización de procesos. Busco seguir desarrollándome como ingeniero de datos o desarrollador web, con interés en oportunidades Erasmus+ o puestos junior en Europa.</p>
         </div>
     </div>
-    </section>
-
+    <div class="titulo-links">
+            <a target="_blank" href="https://github.com/juancarlospizarro">Github <i class="bi bi-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/juancarlospizarroalonso/">Linkedin <i class="bi bi-linkedin"></i></a>
+            <a href="">CV <i class="bi bi-file-earmark-person-fill"></i></a>
+        </div>
     <section class="experiencia" id="experiencia">
         <h2 data-i18n="experiencia_titulo">Experiencia</h2>
         <div class="tarjetas">
@@ -117,48 +114,6 @@
             <img src="img/logoPNG_3.png" alt="Logo US" class="tarjeta-img" />
         </div>
     </div>
-    </section>
-    <section class="certificaciones" id="certificaciones">
-        <h2 data-i18n="certificaciones_titulo">Certificaciones</h2>
-        <div class="tarjetas">
-            <h3>Introduction to MongoDB</h3>
-            <div class="tarjeta-content">
-            <div class="tarjeta-texto">
-            <h4><a target="_blank" class="enlaces_instituciones" href="https://learn.mongodb.com/learning-paths/introduction-to-mongodb">MongoDB <i class="bi bi-box-arrow-up-right"></i></a></h4>
-            <h5><a data-i18n="certificado_enlace" target="_blank" href="https://learn.mongodb.com/c/2K_9tj6qTUS_DOo7GxiWBw">Certificado</a></h5>
-        </div>
-        <img src="img/mongodb-logo-png_seeklogo-444845.webp" alt="Logo MongoDB" class="tarjeta-img"> 
-            </div>
-        </div>
-        <div class="tarjetas">
-            <h3>Aptis ESOL General C1 (CEFR)</h3>
-            <div class="tarjeta-content">
-            <div class="tarjeta-texto">
-            <h4><a target="_blank" class="enlaces_instituciones" href="https://www.britishcouncil.org/">British Council <i class="bi bi-box-arrow-up-right"></i></a></h4>
-        </div>
-        <img src="img/lg-67616c4372dec-British-Council.webp" alt="Logo British Council" class="tarjeta-img">
-            </div>
-        </div>
-        <div class="tarjetas">
-            <h3>Career Essentials in Data Analysis by Microsoft and LinkedIn</h3>
-            <div class="tarjeta-content">
-            <div class="tarjeta-texto">
-            <h4><a target="_blank" class="enlaces_instituciones" href="https://www.linkedin.com/learning/paths/career-essentials-in-data-analysis-by-microsoft-and-linkedin">Microsoft & Linkedin <i class="bi bi-box-arrow-up-right"></i></a></h4>
-            <h5><a data-i18n="certificado_enlace" target="_blank" href="https://www.linkedin.com/learning/certificates/bfd1927b00104b2747fc4d295baa3bf4d03072507bf04f48db1f46dfd10f00da">Certificado</a></h5>
-        </div>
-        <img src="img/Microsoft-Logo-PNG-Image-HD.webp" alt="Logo Microsoft" class="tarjeta-img">
-            </div>
-        </div>
-        <div class="tarjetas">
-            <h3>Python for Data Science</h3>
-            <div class="tarjeta-content">
-            <div class="tarjeta-texto">
-            <h4><a target="_blank" class="enlaces_instituciones" href="https://cognitiveclass.ai/courses/python-for-data-science">IBM <i class="bi bi-box-arrow-up-right"></i></a></h4>
-            <h5><a data-i18n="certificado_enlace" target="_blank" href="https://courses.cognitiveclass.ai/certificates/ae522619108943cb90b68391946484e0">Certificado</a></h5>
-        </div>
-        <img src="img/IBM-Logo-PNG.webp" alt="Logo IBM" class="tarjeta-img">
-            </div>
-        </div>
     </section>
     <section class="proyectos" id="proyectos">
         <h2 data-i18n="proyectos_titulo">Proyectos</h2>
@@ -298,6 +253,47 @@
         </div>
         </div>
         </div>
+    </section>
+    <section class="certificaciones" id="certificaciones">
+        <h2 data-i18n="certificaciones_titulo">Certificaciones</h2>
+        <div class="grid-certificados">
+            <div class="certificados">
+            <h3>Introduction to MongoDB</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4><a target="_blank" class="enlaces_instituciones" href="https://learn.mongodb.com/learning-paths/introduction-to-mongodb">MongoDB <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <h5><a data-i18n="certificado_enlace" target="_blank" href="https://learn.mongodb.com/c/2K_9tj6qTUS_DOo7GxiWBw">Ver certificado</a></h5>
+        </div>
+            </div>
+        </div>
+        <div class="certificados">
+            <h3>Aptis ESOL General C1 (CEFR)</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4><a target="_blank" class="enlaces_instituciones" href="https://www.britishcouncil.org/">British Council <i class="bi bi-box-arrow-up-right"></i></a></h4>
+        </div>
+            </div>
+        </div>
+        <div class="certificados">
+            <h3>Career Essentials in Data Analysis by Microsoft and LinkedIn</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4><a target="_blank" class="enlaces_instituciones" href="https://www.linkedin.com/learning/paths/career-essentials-in-data-analysis-by-microsoft-and-linkedin">Microsoft & Linkedin <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <h5><a data-i18n="certificado_enlace" target="_blank" href="https://www.linkedin.com/learning/certificates/bfd1927b00104b2747fc4d295baa3bf4d03072507bf04f48db1f46dfd10f00da">Ver certificado</a></h5>
+        </div>
+            </div>
+        </div>
+        <div class="certificados">
+            <h3>Python for Data Science</h3>
+            <div class="tarjeta-content">
+            <div class="tarjeta-texto">
+            <h4><a target="_blank" class="enlaces_instituciones" href="https://cognitiveclass.ai/courses/python-for-data-science">IBM <i class="bi bi-box-arrow-up-right"></i></a></h4>
+            <h5><a data-i18n="certificado_enlace" target="_blank" href="https://courses.cognitiveclass.ai/certificates/ae522619108943cb90b68391946484e0">Ver certificado</a></h5>
+        </div>
+            </div>
+        </div>
+        </div>
+        
     </section>
     <section class="contacto" id="contacto">
         <h2 data-i18n="contacto_titulo">Contacto</h2>
