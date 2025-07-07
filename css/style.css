@@ -136,6 +136,10 @@ body {
   color: white;
 }
 
+.cv-link span{
+  border-radius: 50%;
+}
+
 /* SECCIONES */
 section {
   margin: 50px auto;
@@ -206,6 +210,11 @@ section:nth-of-type(even) h2::after{
 
 .tarjeta-texto {
   flex: 1; /* Ocupa el espacio restante */
+}
+
+section[id="formacion"] .tarjeta-texto{
+  flex: 1; /* Ocupa el espacio restante */
+  text-align: right;
 }
 
 .tarjeta-img img {
@@ -479,6 +488,8 @@ footer {
 }
 
 /* RESPONSIVE */
+
+/*
 @media (min-width: 768px) {
   .sobremi-content {
     flex-direction: row;
@@ -554,4 +565,71 @@ footer {
   .tarjetas {
     padding: 18px;
   }
+}*/
+
+/* Tablet (≥ 768 y ‹ 1024) */
+@media(max-width:1023px){
+  .nombre_titulo{font-size:2.1rem}
+  .perfil-img{width:110px;height:110px}
+  .tarjeta-content{flex-wrap:wrap;gap:20px}
+  .tarjeta-img{max-width:120px}
+  .sobremi-content{margin:0 10%}
+}
+
+/* Móvil (< 768) */
+@media(max-width:767px){
+  /* Header */
+  .header{padding:15px 20px;flex-direction:column;align-items:flex-start;gap:10px}
+  .header nav{width:100%;flex-wrap:wrap;gap:10px;margin-top:0}
+  .header nav a{flex:1 1 auto;text-align:center;font-size:1rem;padding:8px 0}
+
+  /* Nombre + foto en columna */
+  .header-perfil{flex-direction:column;gap:12px}
+  .nombre_titulo{font-size:1.8rem;text-align:center}
+  .perfil-img{width:120px;height:120px}
+
+  /* Secciones */
+  section{margin:30px 0;padding:0 15px}
+  section h2{text-align:center !important}
+  section h2::after{left:50% !important;transform:translateX(-50%);}
+
+  /* Sobre mí centrado */
+  .sobremi-content{margin:0 8%}
+
+  /* Tarjetas en columna */
+  .tarjetas{flex-direction:column;text-align:center;padding:18px}
+  .tarjeta-content{flex-direction:column;align-items:center}
+  .tarjeta-img{max-width:180px;width:70%}
+  section[id="formacion"] .tarjetas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section[id="formacion"] .tarjetas > h3 {
+    order: 1;
+  }
+
+  section[id="formacion"] .tarjeta-content {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section[id="formacion"] .tarjeta-content img {
+    order: 3;
+  }
+
+  section[id="formacion"] .tarjeta-texto {
+    order: 2;
+    text-align: center;
+  }
+
+  /* Grid certificados a 1 columna */
+  .grid-certificados{grid-template-columns:1fr}
+
+  /* Filtros proyectos flex‑wrap */
+  .filtros-proyectos{display:flex;flex-wrap:wrap;gap:8px; justify-content: center;}
+
+  /* Botón enviar ancho 100 % */
+  button[type=submit]{width:100%}
 }
